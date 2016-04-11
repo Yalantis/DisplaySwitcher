@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'DisplaySwitcher_Example', :exclusive => true do
+  pod 'DisplaySwitcher', :path => '../'
+end
+
+target 'DisplaySwitcher_Tests', :exclusive => true do
+  pod 'DisplaySwitcher', :path => '../'
+
+  
+end
