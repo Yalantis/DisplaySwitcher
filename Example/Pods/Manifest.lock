@@ -1,0 +1,14 @@
+PODS:
+  - DisplaySwitcher (0.1.0)
+
+DEPENDENCIES:
+  - DisplaySwitcher (from `../`)
+
+EXTERNAL SOURCES:
+  DisplaySwitcher:
+    :path: ../
+
+SPEC CHECKSUMS:
+  DisplaySwitcher: 6a12f27033ffbbe5a533971380a8aee7d291f0df
+
+COCOAPODS: 0.38.2

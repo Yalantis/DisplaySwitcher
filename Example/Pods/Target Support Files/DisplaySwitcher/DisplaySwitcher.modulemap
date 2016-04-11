@@ -1,0 +1,6 @@
+framework module DisplaySwitcher {
+  umbrella header "DisplaySwitcher-umbrella.h"
+
+  export *
+  module * { export * }
+}

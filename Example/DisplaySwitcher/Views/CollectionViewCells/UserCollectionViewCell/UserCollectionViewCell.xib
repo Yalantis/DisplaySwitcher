@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Dosis-ExtraLight.otf">
+            <string>Dosis-ExtraLight</string>
+        </mutableArray>
+        <mutableArray key="Dosis-Regular.otf">
+            <string>Dosis-Regular</string>
+            <string>Dosis-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UserCollectionViewCell" id="gdF-wQ-JiZ" customClass="UserCollectionViewCell" customModule="YALLayoutTransitioning" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xuV-JL-rj1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+                        <color key="backgroundColor" red="0.1215686275" green="0.1450980392" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23 posts  •  78 comments  •  341 likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tae-yd-Jjo">
+                        <rect key="frame" x="95" y="44" width="200" height="19"/>
+                        <fontDescription key="fontDescription" name="Dosis-ExtraLight" family="Dosis" pointSize="15"/>
+                        <color key="textColor" red="0.396078431372549" green="0.52941176470588236" blue="0.50588235294117645" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grace Simpson" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwV-Zy-XbA">
+                        <rect key="frame" x="95" y="15" width="97" height="22"/>
+                        <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="17"/>
+                        <color key="textColor" red="0.56078431370000004" green="0.62745098040000002" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bNy-hc-AKS" userLabel="Container View">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grace Simpson" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffm-Pv-DOi">
+                                <rect key="frame" x="10" y="33" width="59" height="43"/>
+                                <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="17"/>
+                                <color key="textColor" red="0.5607843137254902" green="0.62745098039215685" blue="0.6705882352941176" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ffm-Pv-DOi" firstAttribute="leading" secondItem="bNy-hc-AKS" secondAttribute="leading" constant="10" id="bND-9Z-Tui"/>
+                            <constraint firstAttribute="bottom" secondItem="ffm-Pv-DOi" secondAttribute="bottom" constant="4" id="mC0-hz-8zg"/>
+                            <constraint firstAttribute="trailing" secondItem="ffm-Pv-DOi" secondAttribute="trailing" constant="11" id="xtL-Jy-8km"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rMa-bq-TqE">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="IqF-8v-QP5"/>
+                            <constraint firstAttribute="height" constant="80" id="fNl-vd-0HY"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="rMa-bq-TqE" firstAttribute="top" secondItem="gdF-wQ-JiZ" secondAttribute="top" id="DRm-1f-DUn"/>
+                <constraint firstAttribute="trailing" secondItem="xuV-JL-rj1" secondAttribute="trailing" id="HfT-YS-LTn"/>
+                <constraint firstItem="tae-yd-Jjo" firstAttribute="leading" secondItem="gdF-wQ-JiZ" secondAttribute="leading" constant="95" id="PQW-GR-T8I"/>
+                <constraint firstItem="hwV-Zy-XbA" firstAttribute="leading" secondItem="gdF-wQ-JiZ" secondAttribute="leading" constant="95" id="Peb-am-J2S"/>
+                <constraint firstItem="rMa-bq-TqE" firstAttribute="leading" secondItem="gdF-wQ-JiZ" secondAttribute="leading" id="QED-8H-YJW"/>
+                <constraint firstAttribute="bottom" secondItem="bNy-hc-AKS" secondAttribute="bottom" id="Qaa-R3-55t"/>
+                <constraint firstItem="bNy-hc-AKS" firstAttribute="top" secondItem="gdF-wQ-JiZ" secondAttribute="top" id="Sf6-r2-nJI"/>
+                <constraint firstItem="hwV-Zy-XbA" firstAttribute="top" secondItem="gdF-wQ-JiZ" secondAttribute="top" constant="15" id="ent-aL-IzK"/>
+                <constraint firstItem="xuV-JL-rj1" firstAttribute="top" secondItem="gdF-wQ-JiZ" secondAttribute="top" id="gi5-GN-Y8f"/>
+                <constraint firstItem="bNy-hc-AKS" firstAttribute="leading" secondItem="gdF-wQ-JiZ" secondAttribute="leading" id="gxq-bX-PpQ"/>
+                <constraint firstItem="xuV-JL-rj1" firstAttribute="leading" secondItem="gdF-wQ-JiZ" secondAttribute="leading" id="hxB-fz-5ZD"/>
+                <constraint firstItem="rMa-bq-TqE" firstAttribute="width" secondItem="bNy-hc-AKS" secondAttribute="width" id="niJ-Zv-KLj"/>
+                <constraint firstAttribute="bottom" secondItem="xuV-JL-rj1" secondAttribute="bottom" id="oUe-zB-fmf"/>
+                <constraint firstItem="tae-yd-Jjo" firstAttribute="top" secondItem="hwV-Zy-XbA" secondAttribute="bottom" constant="7" id="ycR-HR-rHV"/>
+            </constraints>
+            <size key="customSize" width="329" height="50"/>
+            <connections>
+                <outlet property="avatarImageView" destination="rMa-bq-TqE" id="rP2-35-59b"/>
+                <outlet property="avatarImageViewHeightConstraint" destination="fNl-vd-0HY" id="SHE-aA-uST"/>
+                <outlet property="avatarImageViewWidthConstraint" destination="IqF-8v-QP5" id="9b4-mv-RS2"/>
+                <outlet property="backgroundGradientView" destination="xuV-JL-rj1" id="ZjJ-Jh-wOL"/>
+                <outlet property="nameGridLabel" destination="ffm-Pv-DOi" id="kal-L5-uE4"/>
+                <outlet property="nameListLabel" destination="hwV-Zy-XbA" id="Uh3-pU-iDZ"/>
+                <outlet property="nameListLabelLeadingConstraint" destination="Peb-am-J2S" id="S32-gL-Kke"/>
+                <outlet property="statisticLabel" destination="tae-yd-Jjo" id="Uhb-e0-xX9"/>
+                <outlet property="statisticLabelLeadingConstraint" destination="PQW-GR-T8I" id="fFh-ov-fJx"/>
+            </connections>
+            <point key="canvasLocation" x="389" y="223"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -33,7 +33,18 @@
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Dosis-SemiBold.otf</string>
+		<string>Dosis-Regular.otf</string>
+		<string>Dosis-Bold.otf</string>
+		<string>Dosis-ExtraBold.otf</string>
+		<string>Dosis-ExtraLight.otf</string>
+		<string>Dosis-Light.otf</string>
+		<string>Dosis-Medium.otf</string>
 	</array>
 </dict>
 </plist>
