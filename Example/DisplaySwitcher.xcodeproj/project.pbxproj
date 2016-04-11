@@ -28,6 +28,7 @@
 		77C5B4491CBBCBA5008E92DD /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C5B4341CBBCBA5008E92DD /* UserViewController.swift */; };
 		77C5B44A1CBBCBA5008E92DD /* UserCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C5B4381CBBCBA5008E92DD /* UserCollectionViewCell.swift */; };
 		77C5B44B1CBBCBA5008E92DD /* UserCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77C5B4391CBBCBA5008E92DD /* UserCollectionViewCell.xib */; };
+		77FE01261CBBF437002BAFF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77FE01251CBBF437002BAFF4 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		77C5B4341CBBCBA5008E92DD /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		77C5B4381CBBCBA5008E92DD /* UserCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCollectionViewCell.swift; sourceTree = "<group>"; };
 		77C5B4391CBBCBA5008E92DD /* UserCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserCollectionViewCell.xib; sourceTree = "<group>"; };
+		77FE01251CBBF437002BAFF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B9B39F07E6158A039530CAF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		8210CE74B2BF2FB8A2C9B723 /* Pods-DisplaySwitcher_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DisplaySwitcher_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DisplaySwitcher_Tests/Pods-DisplaySwitcher_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -130,6 +132,7 @@
 				77C5B4291CBBCBA5008E92DD /* Resources */,
 				77C5B4191CBBCBA5008E92DD /* Base.lproj */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				77FE01251CBBF437002BAFF4 /* Assets.xcassets */,
 				77C5B4171CBBCBA4008E92DD /* DisplaySwitcher_Example-Bridging-Header.h */,
 			);
 			name = "DisplaySwitcher-Example";
@@ -401,6 +404,7 @@
 			files = (
 				77C5B4441CBBCBA5008E92DD /* Dosis-ExtraLight.otf in Resources */,
 				77C5B44B1CBBCBA5008E92DD /* UserCollectionViewCell.xib in Resources */,
+				77FE01261CBBF437002BAFF4 /* Assets.xcassets in Resources */,
 				77C5B4471CBBCBA5008E92DD /* Dosis-Regular.otf in Resources */,
 				77C5B4451CBBCBA5008E92DD /* Dosis-Light.otf in Resources */,
 				77C5B43B1CBBCBA5008E92DD /* LaunchScreen.storyboard in Resources */,
