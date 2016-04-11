@@ -6,6 +6,7 @@ This component implements custom transition between two collection view layouts.
 [![Yalantis](https://raw.githubusercontent.com/Yalantis/PullToRefresh/develop/PullToRefreshDemo/Resources/badge_dark.png)](https://yalantis.com/?utm_source=github)
 
 <img src="https://d13yacurqjgara.cloudfront.net/users/116693/screenshots/2276068/open-uri20151005-3-walc59" />
+
 Check this <a href="https://dribbble.com/shots/2276068-Contact-Display-Switch">project on dribbble</a>.
 
 Also, read how it was done in [our blog](…)
@@ -45,29 +46,29 @@ collectionView.collectionViewLayout = listLayout
 Then override two UICollectionViewDataSource methods:
 ```swift
 func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-// count of items
+    // count of items
 }
 func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-// configure your custom cell
+    // configure your custom cell
 }
 ```
 
 Also override one UICollectionViewDelegate method (for custom layout transition):
 ```swift
 func collectionView(collectionView: UICollectionView, transitionLayoutForOldLayout fromLayout: UICollectionViewLayout, newLayout toLayout: UICollectionViewLayout) -> UICollectionViewTransitionLayout {
-let customTransitionLayout = TransitionLayout(currentLayout: fromLayout, nextLayout: toLayout)
-return customTransitionLayout
+    let customTransitionLayout = TransitionLayout(currentLayout: fromLayout, nextLayout: toLayout)
+    return customTransitionLayout
 }
 ```
 And in the end necessary create transition and start it:
 ```swift
 let transitionManager: TransitionManager
 if layoutState == .ListLayoutState {
-layoutState = .GridLayoutState
-transitionManager = TransitionManager(duration: animationDuration, collectionView: collectionView!, destinationLayout: gridLayout, layoutState: layoutState)
+    layoutState = .GridLayoutState
+    transitionManager = TransitionManager(duration: animationDuration, collectionView: collectionView!, destinationLayout: gridLayout, layoutState: layoutState)
 } else {
-layoutState = .ListLayoutState
-transitionManager = TransitionManager(duration: animationDuration, collectionView: collectionView!, destinationLayout: listLayout, layoutState: layoutState)
+    layoutState = .ListLayoutState
+    transitionManager = TransitionManager(duration: animationDuration, collectionView: collectionView!, destinationLayout: listLayout, layoutState: layoutState)
 }
 transitionManager.startInteractiveTransition()
 ```
