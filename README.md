@@ -26,7 +26,7 @@ pod ‘DisplaySwitcher’, '~> 0.1.0'
 ##Installing with [Carthage](https://github.com/Carthage/Carthage)
 
 ```ruby
-github "Yalantis/DisplaySwitcher"
+github "Yalantis/DisplaySwitcher" ~> 0.1.0
 ```
 
 ##Usage
