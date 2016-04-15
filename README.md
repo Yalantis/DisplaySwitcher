@@ -12,7 +12,7 @@ Check this <a href="https://dribbble.com/shots/2276068-Contact-Display-Switch">p
 Also, read how it was done in [our blog](…)
 
 ##Requirements
-- iOS 9.0+
+- iOS 8.0+ (for component), iOS 9.0+ (for example)
 - Xcode 7
 - Swift 2
 
@@ -21,6 +21,12 @@ Also, read how it was done in [our blog](…)
 ```ruby
 use_frameworks!
 pod ‘DisplaySwitcher’, '~> 0.1.0'
+```
+
+##Installing with [Carthage](https://github.com/Carthage/Carthage)
+
+```ruby
+github "Yalantis/DisplaySwitcher"
 ```
 
 ##Usage
@@ -61,7 +67,7 @@ func collectionView(collectionView: UICollectionView, transitionLayoutForOldLayo
     return customTransitionLayout
 }
 ```
-And in the end necessary create transition and start it:
+And in the end necessary create transition and start it (you can simply change animation duration for transition layout and for rotation button):
 ```swift
 let transitionManager: TransitionManager
 if layoutState == .ListLayoutState {
@@ -72,6 +78,8 @@ if layoutState == .ListLayoutState {
     transitionManager = TransitionManager(duration: animationDuration, collectionView: collectionView!, destinationLayout: listLayout, layoutState: layoutState)
 }
 transitionManager.startInteractiveTransition()
+rotationButton.selected = layoutState == .ListLayoutState
+rotationButton.animationDuration = animationDuration
 ```
 
 Have fun! :)
