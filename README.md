@@ -1,7 +1,7 @@
 # Display Switcher
 [![Platform](http://img.shields.io/badge/platform-iOS-blue.svg?style=flat)](http://cocoapods.org/?q=YALSideMenu) [![License](http://img.shields.io/badge/license-MIT-green.svg?style=flat)]()
 
-This component implements custom transition between two collection view layouts.
+This component implements custom transition between two collection view layouts with custom animation duraton.
 
 [![Yalantis](https://raw.githubusercontent.com/Yalantis/PullToRefresh/develop/PullToRefreshDemo/Resources/badge_dark.png)](https://yalantis.com/?utm_source=github)
 
