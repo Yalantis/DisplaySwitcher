@@ -20,7 +20,7 @@ Also, read how it was done in [our blog](…)
 
 ```ruby
 use_frameworks!
-pod ‘DisplaySwitcher’, '~> 0.1.0'
+pod ‘DisplaySwitcher’, '~> 0.1.1’
 ```
 
 ##Installing with [Carthage](https://github.com/Carthage/Carthage)
