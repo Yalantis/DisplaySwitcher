@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  DisplaySwitcher: 6a12f27033ffbbe5a533971380a8aee7d291f0df
+  DisplaySwitcher: 2a4e32c9aa96b3fd348721d0b363dae668e18877
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0

@@ -1,741 +1,1751 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		17B20D09CD5BC4AD62444A37876DEA02 /* DisplaySwitcher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ECFDEE632033E0E6E0556A1E0814CF9B /* DisplaySwitcher-dummy.m */; };
-		448D8CD9C9EC6CBC8354DF29FE7E5A8F /* Pods-DisplaySwitcher_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DB39B8CDFE25F9CEB6E84C73EF869002 /* Pods-DisplaySwitcher_Example-dummy.m */; };
-		46CAC76AA144B5F685F8415CA158D89A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B113366D91684D6575DC7CE5B1065D /* Foundation.framework */; };
-		5083D4D41244EDED20349686656F34FC /* TransitionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228903A2A8F5DAA4B001488E08D4ED17 /* TransitionLayout.swift */; };
-		89CE17404C1EFB2B355D0E9B4EFF144C /* BaseLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0FC6C51C69BDD3396FD8C3DAE46FCE /* BaseLayout.swift */; };
-		A9955000F05880EDDFFEA28743D003B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B113366D91684D6575DC7CE5B1065D /* Foundation.framework */; };
-		B22C33FE80C7A69229073B6D0B6F45BA /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34BF994E92D8A00117F088739D6D3C59 /* TransitionManager.swift */; };
-		B8D5C990AD0CC06534BA91F7C4F44D54 /* BaseLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84856B0FC62C530ECCD0A7FB2869CBE6 /* BaseLayoutAttributes.swift */; };
-		C4D10834689102F11E82C421F2A48D45 /* DisplaySwitcher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 83CC01F4D4D00BF17DDC9A059BE79D84 /* DisplaySwitcher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E0197E1948746E4D8D6DA488D2617616 /* Pods-DisplaySwitcher_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 517494D725237C4B1824B76F4694A486 /* Pods-DisplaySwitcher_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E8A6F9131AA9EE3B407464EC3946B8D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B113366D91684D6575DC7CE5B1065D /* Foundation.framework */; };
-		EECC66F4287E48D353B3007F9BAB63E1 /* Pods-DisplaySwitcher_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEF94651254E2A8930998498ADE0DEA /* Pods-DisplaySwitcher_Tests-dummy.m */; };
-		F3F024CCD43BA76C8DC5B2C866B08B00 /* Pods-DisplaySwitcher_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CB0C7665B7CAA1EA68E12D4E0E70EC79 /* Pods-DisplaySwitcher_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FEA9DFD7ED09715832BFDF1DFE665481 /* RotationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB08AEB03B43D072E6CC5F20B554BC6 /* RotationButton.swift */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		9DB789137D70D38D74AA14641133EB78 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F46299C0ADEA15C8498BE592185E2CCF;
-			remoteInfo = DisplaySwitcher;
-		};
-		B2C5023F8001FDBD4C1638E64BE93BFD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F46299C0ADEA15C8498BE592185E2CCF;
-			remoteInfo = DisplaySwitcher;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		11155A77EEB1ACEC7B3D1FE2934ABBF8 /* Pods-DisplaySwitcher_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DisplaySwitcher_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1BB08AEB03B43D072E6CC5F20B554BC6 /* RotationButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RotationButton.swift; sourceTree = "<group>"; };
-		1E40E3B9B6F8C7E3836AB5DFD5542AA4 /* Pods-DisplaySwitcher_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DisplaySwitcher_Example.release.xcconfig"; sourceTree = "<group>"; };
-		20170C0384C99F3E2406AD528C79B8C9 /* DisplaySwitcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DisplaySwitcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		219DDF80E962B359DF972679A9E8DC96 /* DisplaySwitcher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DisplaySwitcher-prefix.pch"; sourceTree = "<group>"; };
-		228903A2A8F5DAA4B001488E08D4ED17 /* TransitionLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TransitionLayout.swift; sourceTree = "<group>"; };
-		2E0FC6C51C69BDD3396FD8C3DAE46FCE /* BaseLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BaseLayout.swift; sourceTree = "<group>"; };
-		34BF994E92D8A00117F088739D6D3C59 /* TransitionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
-		48B4A9D72C072CB7800DB773DE70D135 /* Pods-DisplaySwitcher_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DisplaySwitcher_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		517494D725237C4B1824B76F4694A486 /* Pods-DisplaySwitcher_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DisplaySwitcher_Tests-umbrella.h"; sourceTree = "<group>"; };
-		54D4A7B71230D10A6889B3244B9E1642 /* Pods-DisplaySwitcher_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DisplaySwitcher_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		5B59A03B2D34D3AC53650D109D389935 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5F85643492ECB50D2E82A88AC23D6C1E /* Pods-DisplaySwitcher_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DisplaySwitcher_Tests.modulemap"; sourceTree = "<group>"; };
-		66FCE5DE932F0DB83636BB30A4E1C376 /* Pods-DisplaySwitcher_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DisplaySwitcher_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		676905DFAAE993227B41C6B4E526FBBB /* Pods-DisplaySwitcher_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DisplaySwitcher_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		7E2591F51DE98B9E4119D309D261D064 /* Pods_DisplaySwitcher_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DisplaySwitcher_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		836188F3973CA3C5A83B2C582E6EA354 /* DisplaySwitcher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DisplaySwitcher.xcconfig; sourceTree = "<group>"; };
-		83CC01F4D4D00BF17DDC9A059BE79D84 /* DisplaySwitcher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DisplaySwitcher-umbrella.h"; sourceTree = "<group>"; };
-		84856B0FC62C530ECCD0A7FB2869CBE6 /* BaseLayoutAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BaseLayoutAttributes.swift; sourceTree = "<group>"; };
-		8CE9BFE228ED903BD2FEAF6D5D0437B0 /* Pods-DisplaySwitcher_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DisplaySwitcher_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		8EEF94651254E2A8930998498ADE0DEA /* Pods-DisplaySwitcher_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DisplaySwitcher_Tests-dummy.m"; sourceTree = "<group>"; };
-		8FBE7A4BC6003298F8C9A55C900D789C /* DisplaySwitcher-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "DisplaySwitcher-Private.xcconfig"; sourceTree = "<group>"; };
-		901EFD7A6B03D9EBCAF811148B636788 /* DisplaySwitcher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DisplaySwitcher.modulemap; sourceTree = "<group>"; };
-		98458304019EB6C5A92301A9B2390227 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A445D0F0F5272C2C039C3D5E202BA256 /* Pods-DisplaySwitcher_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DisplaySwitcher_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		AD2EDCBD9280632A22F023C28E7A2C0B /* Pods-DisplaySwitcher_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DisplaySwitcher_Example-frameworks.sh"; sourceTree = "<group>"; };
-		B89E3E4156BEF1CE9810E597CA5BF9CC /* Pods_DisplaySwitcher_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DisplaySwitcher_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B8F256FAAC39AD7D0B16A704DA35AA73 /* Pods-DisplaySwitcher_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DisplaySwitcher_Tests-resources.sh"; sourceTree = "<group>"; };
-		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C4B5139F8658A029AA1E4B2CDD3FECF7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB0C7665B7CAA1EA68E12D4E0E70EC79 /* Pods-DisplaySwitcher_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DisplaySwitcher_Example-umbrella.h"; sourceTree = "<group>"; };
-		D18B1DF5821235EF7CC994C4AB2F29FE /* Pods-DisplaySwitcher_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DisplaySwitcher_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DB39B8CDFE25F9CEB6E84C73EF869002 /* Pods-DisplaySwitcher_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DisplaySwitcher_Example-dummy.m"; sourceTree = "<group>"; };
-		DF09F695146B2DF19B0305C12E00635E /* Pods-DisplaySwitcher_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DisplaySwitcher_Example.modulemap"; sourceTree = "<group>"; };
-		ECFDEE632033E0E6E0556A1E0814CF9B /* DisplaySwitcher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DisplaySwitcher-dummy.m"; sourceTree = "<group>"; };
-		EEBA1EF9F84FC0D07B6C5B41AC1A1679 /* Pods-DisplaySwitcher_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DisplaySwitcher_Example-resources.sh"; sourceTree = "<group>"; };
-		F7B113366D91684D6575DC7CE5B1065D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		066242DFFD568BA7552B5D9D4815C8FB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A9955000F05880EDDFFEA28743D003B4 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		346C65AB0DFB367B4D96B2849D673B1B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				46CAC76AA144B5F685F8415CA158D89A /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		86DE42D3D0ED25CB7A31D707C37ACDC6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E8A6F9131AA9EE3B407464EC3946B8D2 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		085315AC5E5750F1E6F8FD89FB1522E9 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C42C6309F50B81BB75967535867A3D74 /* Pods-DisplaySwitcher_Example */,
-				5ADFB6A4D121988BD7E1D7547E182247 /* Pods-DisplaySwitcher_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				F7B113366D91684D6575DC7CE5B1065D /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		5A6EECF91DF19E46F5313FEC2F14106D /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				913BFD129A7355BAB6A31A6679C54C0C /* DisplaySwitcher */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		5ADFB6A4D121988BD7E1D7547E182247 /* Pods-DisplaySwitcher_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				C4B5139F8658A029AA1E4B2CDD3FECF7 /* Info.plist */,
-				5F85643492ECB50D2E82A88AC23D6C1E /* Pods-DisplaySwitcher_Tests.modulemap */,
-				11155A77EEB1ACEC7B3D1FE2934ABBF8 /* Pods-DisplaySwitcher_Tests-acknowledgements.markdown */,
-				8CE9BFE228ED903BD2FEAF6D5D0437B0 /* Pods-DisplaySwitcher_Tests-acknowledgements.plist */,
-				8EEF94651254E2A8930998498ADE0DEA /* Pods-DisplaySwitcher_Tests-dummy.m */,
-				48B4A9D72C072CB7800DB773DE70D135 /* Pods-DisplaySwitcher_Tests-frameworks.sh */,
-				B8F256FAAC39AD7D0B16A704DA35AA73 /* Pods-DisplaySwitcher_Tests-resources.sh */,
-				517494D725237C4B1824B76F4694A486 /* Pods-DisplaySwitcher_Tests-umbrella.h */,
-				A445D0F0F5272C2C039C3D5E202BA256 /* Pods-DisplaySwitcher_Tests.debug.xcconfig */,
-				676905DFAAE993227B41C6B4E526FBBB /* Pods-DisplaySwitcher_Tests.release.xcconfig */,
-			);
-			name = "Pods-DisplaySwitcher_Tests";
-			path = "Target Support Files/Pods-DisplaySwitcher_Tests";
-			sourceTree = "<group>";
-		};
-		62BB0BD578310AAA948CD54FB5EE3E7C /* TransitionManager */ = {
-			isa = PBXGroup;
-			children = (
-				34BF994E92D8A00117F088739D6D3C59 /* TransitionManager.swift */,
-			);
-			path = TransitionManager;
-			sourceTree = "<group>";
-		};
-		7940839AAF5B5B9B9CDE3A69F9403059 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				97E5AB64DC6D995DBCB3A4411D43D8CE /* Layouts */,
-				C0284FAAACC4655013B6B90379C1868A /* TransitionLayout */,
-				62BB0BD578310AAA948CD54FB5EE3E7C /* TransitionManager */,
-				EA2B54E6E864292349377ABFBEC9689B /* Views */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				5A6EECF91DF19E46F5313FEC2F14106D /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
-				085315AC5E5750F1E6F8FD89FB1522E9 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		8AD78A83683029C4FEE51ECBE81CED8C /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				7940839AAF5B5B9B9CDE3A69F9403059 /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-		913BFD129A7355BAB6A31A6679C54C0C /* DisplaySwitcher */ = {
-			isa = PBXGroup;
-			children = (
-				8AD78A83683029C4FEE51ECBE81CED8C /* Pod */,
-				DD5CA10AA2CC3355DCFE55ACE5C137FA /* Support Files */,
-			);
-			name = DisplaySwitcher;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		97E5AB64DC6D995DBCB3A4411D43D8CE /* Layouts */ = {
-			isa = PBXGroup;
-			children = (
-				C402E2F3DDE3F93EF4A2C495A1811CD1 /* BaseLayout */,
-			);
-			path = Layouts;
-			sourceTree = "<group>";
-		};
-		BABAE1D380F2E21B9B7CC560E2AD35FE /* RotationButton */ = {
-			isa = PBXGroup;
-			children = (
-				1BB08AEB03B43D072E6CC5F20B554BC6 /* RotationButton.swift */,
-			);
-			path = RotationButton;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				53F661C0CA7190D2CF05023FB33D61E4 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C0284FAAACC4655013B6B90379C1868A /* TransitionLayout */ = {
-			isa = PBXGroup;
-			children = (
-				228903A2A8F5DAA4B001488E08D4ED17 /* TransitionLayout.swift */,
-			);
-			path = TransitionLayout;
-			sourceTree = "<group>";
-		};
-		C402E2F3DDE3F93EF4A2C495A1811CD1 /* BaseLayout */ = {
-			isa = PBXGroup;
-			children = (
-				2E0FC6C51C69BDD3396FD8C3DAE46FCE /* BaseLayout.swift */,
-				84856B0FC62C530ECCD0A7FB2869CBE6 /* BaseLayoutAttributes.swift */,
-			);
-			path = BaseLayout;
-			sourceTree = "<group>";
-		};
-		C42C6309F50B81BB75967535867A3D74 /* Pods-DisplaySwitcher_Example */ = {
-			isa = PBXGroup;
-			children = (
-				98458304019EB6C5A92301A9B2390227 /* Info.plist */,
-				DF09F695146B2DF19B0305C12E00635E /* Pods-DisplaySwitcher_Example.modulemap */,
-				D18B1DF5821235EF7CC994C4AB2F29FE /* Pods-DisplaySwitcher_Example-acknowledgements.markdown */,
-				66FCE5DE932F0DB83636BB30A4E1C376 /* Pods-DisplaySwitcher_Example-acknowledgements.plist */,
-				DB39B8CDFE25F9CEB6E84C73EF869002 /* Pods-DisplaySwitcher_Example-dummy.m */,
-				AD2EDCBD9280632A22F023C28E7A2C0B /* Pods-DisplaySwitcher_Example-frameworks.sh */,
-				EEBA1EF9F84FC0D07B6C5B41AC1A1679 /* Pods-DisplaySwitcher_Example-resources.sh */,
-				CB0C7665B7CAA1EA68E12D4E0E70EC79 /* Pods-DisplaySwitcher_Example-umbrella.h */,
-				54D4A7B71230D10A6889B3244B9E1642 /* Pods-DisplaySwitcher_Example.debug.xcconfig */,
-				1E40E3B9B6F8C7E3836AB5DFD5542AA4 /* Pods-DisplaySwitcher_Example.release.xcconfig */,
-			);
-			name = "Pods-DisplaySwitcher_Example";
-			path = "Target Support Files/Pods-DisplaySwitcher_Example";
-			sourceTree = "<group>";
-		};
-		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				20170C0384C99F3E2406AD528C79B8C9 /* DisplaySwitcher.framework */,
-				7E2591F51DE98B9E4119D309D261D064 /* Pods_DisplaySwitcher_Example.framework */,
-				B89E3E4156BEF1CE9810E597CA5BF9CC /* Pods_DisplaySwitcher_Tests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		DD5CA10AA2CC3355DCFE55ACE5C137FA /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				901EFD7A6B03D9EBCAF811148B636788 /* DisplaySwitcher.modulemap */,
-				836188F3973CA3C5A83B2C582E6EA354 /* DisplaySwitcher.xcconfig */,
-				8FBE7A4BC6003298F8C9A55C900D789C /* DisplaySwitcher-Private.xcconfig */,
-				ECFDEE632033E0E6E0556A1E0814CF9B /* DisplaySwitcher-dummy.m */,
-				219DDF80E962B359DF972679A9E8DC96 /* DisplaySwitcher-prefix.pch */,
-				83CC01F4D4D00BF17DDC9A059BE79D84 /* DisplaySwitcher-umbrella.h */,
-				5B59A03B2D34D3AC53650D109D389935 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/DisplaySwitcher";
-			sourceTree = "<group>";
-		};
-		EA2B54E6E864292349377ABFBEC9689B /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				BABAE1D380F2E21B9B7CC560E2AD35FE /* RotationButton */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		224D2848573328F359E02589B69503F9 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C4D10834689102F11E82C421F2A48D45 /* DisplaySwitcher-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		27E4B99F9CB1605049CCB2AAD210FDC9 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F3F024CCD43BA76C8DC5B2C866B08B00 /* Pods-DisplaySwitcher_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5BFAF848D2125BF38B5F3D0B2AD98790 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E0197E1948746E4D8D6DA488D2617616 /* Pods-DisplaySwitcher_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		15F6A03A885FDE8349858917D7A98FA5 /* Pods-DisplaySwitcher_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 44556E7C96FBEF676F2BEE7F746F45A3 /* Build configuration list for PBXNativeTarget "Pods-DisplaySwitcher_Tests" */;
-			buildPhases = (
-				899D39CBDDE072F86C56608C12773180 /* Sources */,
-				86DE42D3D0ED25CB7A31D707C37ACDC6 /* Frameworks */,
-				5BFAF848D2125BF38B5F3D0B2AD98790 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				55D43CB54B83F3D7C6EB621AD3D95D87 /* PBXTargetDependency */,
-			);
-			name = "Pods-DisplaySwitcher_Tests";
-			productName = "Pods-DisplaySwitcher_Tests";
-			productReference = B89E3E4156BEF1CE9810E597CA5BF9CC /* Pods_DisplaySwitcher_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		483BDC56C08EBBAAB8F80A2435AC9EB9 /* Pods-DisplaySwitcher_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ABB4D902FCBD9F2A63F2D7E6AFFDA992 /* Build configuration list for PBXNativeTarget "Pods-DisplaySwitcher_Example" */;
-			buildPhases = (
-				942B31B95B4BDEF8E7BDFEFCBFDE8BC9 /* Sources */,
-				066242DFFD568BA7552B5D9D4815C8FB /* Frameworks */,
-				27E4B99F9CB1605049CCB2AAD210FDC9 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A20AA996CA9756778352D9F55B798DB2 /* PBXTargetDependency */,
-			);
-			name = "Pods-DisplaySwitcher_Example";
-			productName = "Pods-DisplaySwitcher_Example";
-			productReference = 7E2591F51DE98B9E4119D309D261D064 /* Pods_DisplaySwitcher_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		F46299C0ADEA15C8498BE592185E2CCF /* DisplaySwitcher */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AB83B96DCA2D6450BA52F0F5449BF5D9 /* Build configuration list for PBXNativeTarget "DisplaySwitcher" */;
-			buildPhases = (
-				3D2A204FE35BB413301E58A6D5F7C95E /* Sources */,
-				346C65AB0DFB367B4D96B2849D673B1B /* Frameworks */,
-				224D2848573328F359E02589B69503F9 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = DisplaySwitcher;
-			productName = DisplaySwitcher;
-			productReference = 20170C0384C99F3E2406AD528C79B8C9 /* DisplaySwitcher.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
-			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				F46299C0ADEA15C8498BE592185E2CCF /* DisplaySwitcher */,
-				483BDC56C08EBBAAB8F80A2435AC9EB9 /* Pods-DisplaySwitcher_Example */,
-				15F6A03A885FDE8349858917D7A98FA5 /* Pods-DisplaySwitcher_Tests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXSourcesBuildPhase section */
-		3D2A204FE35BB413301E58A6D5F7C95E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				89CE17404C1EFB2B355D0E9B4EFF144C /* BaseLayout.swift in Sources */,
-				B8D5C990AD0CC06534BA91F7C4F44D54 /* BaseLayoutAttributes.swift in Sources */,
-				17B20D09CD5BC4AD62444A37876DEA02 /* DisplaySwitcher-dummy.m in Sources */,
-				FEA9DFD7ED09715832BFDF1DFE665481 /* RotationButton.swift in Sources */,
-				5083D4D41244EDED20349686656F34FC /* TransitionLayout.swift in Sources */,
-				B22C33FE80C7A69229073B6D0B6F45BA /* TransitionManager.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		899D39CBDDE072F86C56608C12773180 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EECC66F4287E48D353B3007F9BAB63E1 /* Pods-DisplaySwitcher_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		942B31B95B4BDEF8E7BDFEFCBFDE8BC9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				448D8CD9C9EC6CBC8354DF29FE7E5A8F /* Pods-DisplaySwitcher_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		55D43CB54B83F3D7C6EB621AD3D95D87 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = DisplaySwitcher;
-			target = F46299C0ADEA15C8498BE592185E2CCF /* DisplaySwitcher */;
-			targetProxy = 9DB789137D70D38D74AA14641133EB78 /* PBXContainerItemProxy */;
-		};
-		A20AA996CA9756778352D9F55B798DB2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = DisplaySwitcher;
-			target = F46299C0ADEA15C8498BE592185E2CCF /* DisplaySwitcher */;
-			targetProxy = B2C5023F8001FDBD4C1638E64BE93BFD /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		49233B93A512F01C5641A987497529D9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 676905DFAAE993227B41C6B4E526FBBB /* Pods-DisplaySwitcher_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-DisplaySwitcher_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-DisplaySwitcher_Tests/Pods-DisplaySwitcher_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_DisplaySwitcher_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				ONLY_ACTIVE_ARCH = YES;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		5D72EF5A5B5BAD3B6CE98047FB6F7E34 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8FBE7A4BC6003298F8C9A55C900D789C /* DisplaySwitcher-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 0.1.0;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/DisplaySwitcher/DisplaySwitcher-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DisplaySwitcher/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DisplaySwitcher/DisplaySwitcher.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = DisplaySwitcher;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		74857149DC1E0D599B8A01A78349A926 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		79DBB21C586C496CABFB7CCD798213A8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A445D0F0F5272C2C039C3D5E202BA256 /* Pods-DisplaySwitcher_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-DisplaySwitcher_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-DisplaySwitcher_Tests/Pods-DisplaySwitcher_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_DisplaySwitcher_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A97B72B685EB04399EDDA3CA50BB73D2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8FBE7A4BC6003298F8C9A55C900D789C /* DisplaySwitcher-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 0.1.0;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/DisplaySwitcher/DisplaySwitcher-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DisplaySwitcher/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DisplaySwitcher/DisplaySwitcher.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = DisplaySwitcher;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		BF65C46C8136ABFBB14BCE4A082F11DD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E40E3B9B6F8C7E3836AB5DFD5542AA4 /* Pods-DisplaySwitcher_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-DisplaySwitcher_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-DisplaySwitcher_Example/Pods-DisplaySwitcher_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_DisplaySwitcher_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F1F63D4D0234C274EC2C723F59697275 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 54D4A7B71230D10A6889B3244B9E1642 /* Pods-DisplaySwitcher_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-DisplaySwitcher_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-DisplaySwitcher_Example/Pods-DisplaySwitcher_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_DisplaySwitcher_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */,
-				74857149DC1E0D599B8A01A78349A926 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		44556E7C96FBEF676F2BEE7F746F45A3 /* Build configuration list for PBXNativeTarget "Pods-DisplaySwitcher_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				79DBB21C586C496CABFB7CCD798213A8 /* Debug */,
-				49233B93A512F01C5641A987497529D9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AB83B96DCA2D6450BA52F0F5449BF5D9 /* Build configuration list for PBXNativeTarget "DisplaySwitcher" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A97B72B685EB04399EDDA3CA50BB73D2 /* Debug */,
-				5D72EF5A5B5BAD3B6CE98047FB6F7E34 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ABB4D902FCBD9F2A63F2D7E6AFFDA992 /* Build configuration list for PBXNativeTarget "Pods-DisplaySwitcher_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F1F63D4D0234C274EC2C723F59697275 /* Debug */,
-				BF65C46C8136ABFBB14BCE4A082F11DD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>017A521D0BA7A4B151ABAEBD3DE7B8FA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F2CB6C1890E2B06F11AD668BA56467E9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0281736E323E20F7514477C9D03E3D22</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>E7AA04CF19A10BAB52A0AD3899B0B3D3</string>
+				<string>9777F2DBB3AC07DD4B32D441443118A5</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>02AF2BC6C873084E6A80A7E4C6E8EF07</key>
+		<dict>
+			<key>fileRef</key>
+			<string>62B62A7B928FFAAE5C39758E9657730A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>04D174E558D961BE8889EEB23C775C03</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>02AF2BC6C873084E6A80A7E4C6E8EF07</string>
+				<string>5A5A1786676FA5BB11D4DB1956FBE0E6</string>
+				<string>A639FB8A03FC8EE1BEA9F5E8621258D5</string>
+				<string>017A521D0BA7A4B151ABAEBD3DE7B8FA</string>
+				<string>533DE0146817D10A4AEA8EC43854BD4B</string>
+				<string>CAECE181C8DB31F1ADC8123AB9DC7B14</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>085315AC5E5750F1E6F8FD89FB1522E9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C42C6309F50B81BB75967535867A3D74</string>
+				<string>5ADFB6A4D121988BD7E1D7547E182247</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>087F92CC16067071692D53CB278DF791</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-DisplaySwitcher_Tests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>11155A77EEB1ACEC7B3D1FE2934ABBF8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-DisplaySwitcher_Tests-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1170F0A8956A13D2ED245C3D98A9CB79</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>DisplaySwitcher.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1544A918BEC8168E023B049A8DF627A8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>A831990F8178220C498E2A5E2C0000E3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pod</string>
+			<key>path</key>
+			<string>Pod</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>15B0EB0DD192D9619D61657FB1320DB4</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>27DFD516919454F90A7BFE17731DA57B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>16B6F2ECAC290F079552E4A5F1199374</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>30DC159FB982AC55170EEC9554C1A982</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>1D3FEE79F342E0ED68D03BE8BFF22250</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>DisplaySwitcher.framework</string>
+			<key>path</key>
+			<string>DisplaySwitcher.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>1F4DE42F6DE81C8EB154A2FF507A11B0</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D856F8120470DB6FEB01EF88E450578E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Views</string>
+			<key>path</key>
+			<string>Views</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>21BAB1C9B4B05F60A0D0C01A2F971BE1</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>6C58204AA0FEBB8ACACED6AC9751A9CF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>237A742DE67B79872F59A8A7D566FDC4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1544A918BEC8168E023B049A8DF627A8</string>
+				<string>D500F4569E42782756CFB3AFA5C62C64</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>DisplaySwitcher</string>
+			<key>path</key>
+			<string>../..</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>24255514EB01ED5F0C02877867D66504</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9AD2073390690A8286C655C75DA318CF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>27DFD516919454F90A7BFE17731DA57B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EC6E8479C691B6B3450E9417FB6D6073</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>288B18CC803FD75E129AE7893C9B0148</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>DisplaySwitcher</string>
+			<key>target</key>
+			<string>E01F0D77F3BAA913766049C708CA9B85</string>
+			<key>targetProxy</key>
+			<string>61CF9A3B862786B9C7E7EAC1B1299421</string>
+		</dict>
+		<key>291F935E8E2D4C192BB2B8FC9F7C3C9E</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>F74B676CE1E109F36D8A61852C5CC1F5</string>
+				<string>E0E4BEFE7593F513BAF2C0C4E20345AE</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>296C9812AA9022DE19543564D8ED86A3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>BaseLayoutAttributes.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>A70CDAD61F90AC503C7D04CC22DA2923</string>
+				<string>FB45FFD90572718D82AB9092B750F0CA</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>2DFF6AB9AABDA8E56F13F23CE8D3E6FA</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_DisplaySwitcher_Example.framework</string>
+			<key>path</key>
+			<string>Pods_DisplaySwitcher_Example.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>30DC159FB982AC55170EEC9554C1A982</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7586CEA4E1FBDFF847B640883A82444D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>32704936D1FC35E9AFD0AC5683BBB938</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>1170F0A8956A13D2ED245C3D98A9CB79</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/DisplaySwitcher/DisplaySwitcher-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/DisplaySwitcher/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/DisplaySwitcher/DisplaySwitcher.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>DisplaySwitcher</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>33216D30C80A2315C1874602C5BD43E3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FBA879F5A84489EA4926771648AF0628</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>39D8F5DA7BE2B5F1F3BF9E12C8D0C251</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>B0D5E1EAB1A43D16AFDA8CEA22E588AB</string>
+				<string>32704936D1FC35E9AFD0AC5683BBB938</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>3DAA7EB310EFB1A7CFD4CA49A2647FFF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E4E89230EF59BC255123B67864ACF77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3E4E89230EF59BC255123B67864ACF77</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>3E55A60A00F2DD624B666205B3D708A9</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>67906633FFA22445A5B722378A66B141</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>44B0BBF94B605B0095DE997B31564866</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>291F935E8E2D4C192BB2B8FC9F7C3C9E</string>
+			<key>buildPhases</key>
+			<array>
+				<string>3E55A60A00F2DD624B666205B3D708A9</string>
+				<string>24255514EB01ED5F0C02877867D66504</string>
+				<string>16B6F2ECAC290F079552E4A5F1199374</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>DCD7072EBDC7E8B513716335D59D789C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-DisplaySwitcher_Example</string>
+			<key>productName</key>
+			<string>Pods-DisplaySwitcher_Example</string>
+			<key>productReference</key>
+			<string>2DFF6AB9AABDA8E56F13F23CE8D3E6FA</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>48B4A9D72C072CB7800DB773DE70D135</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-DisplaySwitcher_Tests-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4F36F4B1A3FEAAA2B3F3A41AC36E5B2B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>TransitionLayout.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>533DE0146817D10A4AEA8EC43854BD4B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4F36F4B1A3FEAAA2B3F3A41AC36E5B2B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>57481DEE305B9C020B2D54C0BA2B6112</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-DisplaySwitcher_Example-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5A5A1786676FA5BB11D4DB1956FBE0E6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>296C9812AA9022DE19543564D8ED86A3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>5A6EECF91DF19E46F5313FEC2F14106D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>237A742DE67B79872F59A8A7D566FDC4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Development Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5ADFB6A4D121988BD7E1D7547E182247</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>C4B5139F8658A029AA1E4B2CDD3FECF7</string>
+				<string>5F85643492ECB50D2E82A88AC23D6C1E</string>
+				<string>11155A77EEB1ACEC7B3D1FE2934ABBF8</string>
+				<string>8CE9BFE228ED903BD2FEAF6D5D0437B0</string>
+				<string>EC6E8479C691B6B3450E9417FB6D6073</string>
+				<string>48B4A9D72C072CB7800DB773DE70D135</string>
+				<string>B8F256FAAC39AD7D0B16A704DA35AA73</string>
+				<string>FBA879F5A84489EA4926771648AF0628</string>
+				<string>087F92CC16067071692D53CB278DF791</string>
+				<string>9BEC456B22FFE4DF914A1875FD5A176D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-DisplaySwitcher_Tests</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-DisplaySwitcher_Tests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5E1284D2DB6C84957DB00F97554A5C96</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-DisplaySwitcher_Example.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5F85643492ECB50D2E82A88AC23D6C1E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-DisplaySwitcher_Tests.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>60CCAB5FCBDE0E7A7D8E797FA3E51106</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>3DAA7EB310EFB1A7CFD4CA49A2647FFF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>61CF9A3B862786B9C7E7EAC1B1299421</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>E01F0D77F3BAA913766049C708CA9B85</string>
+			<key>remoteInfo</key>
+			<string>DisplaySwitcher</string>
+		</dict>
+		<key>62B62A7B928FFAAE5C39758E9657730A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>BaseLayout.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>63F140D9077090C024774B3A532BA654</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E4E89230EF59BC255123B67864ACF77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>66FCE5DE932F0DB83636BB30A4E1C376</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-DisplaySwitcher_Example-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>676EAD6AD554B599AE82D8078B6378A0</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>0281736E323E20F7514477C9D03E3D22</string>
+			<key>buildPhases</key>
+			<array>
+				<string>15B0EB0DD192D9619D61657FB1320DB4</string>
+				<string>60CCAB5FCBDE0E7A7D8E797FA3E51106</string>
+				<string>B7CE4CE7A9289EB30585817EDBE616F3</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>288B18CC803FD75E129AE7893C9B0148</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-DisplaySwitcher_Tests</string>
+			<key>productName</key>
+			<string>Pods-DisplaySwitcher_Tests</string>
+			<key>productReference</key>
+			<string>7394EB2BFD9275D23470E386495AB031</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>67906633FFA22445A5B722378A66B141</key>
+		<dict>
+			<key>fileRef</key>
+			<string>57481DEE305B9C020B2D54C0BA2B6112</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6C58204AA0FEBB8ACACED6AC9751A9CF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>928063B48F506E2DFCFCEEA67C5857C0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>70F75354FF8AF6D60142D82D3265A688</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>DisplaySwitcher.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7394EB2BFD9275D23470E386495AB031</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_DisplaySwitcher_Tests.framework</string>
+			<key>path</key>
+			<string>Pods_DisplaySwitcher_Tests.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>7586CEA4E1FBDFF847B640883A82444D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-DisplaySwitcher_Example-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7DB346D0F39D3F0E887471402A8071AB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
+				<string>5A6EECF91DF19E46F5313FEC2F14106D</string>
+				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
+				<string>F5FC86C54D8C2A9EE1E540EA05ACBDE8</string>
+				<string>085315AC5E5750F1E6F8FD89FB1522E9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7E3D7D530D5F87952C7779E5872038E5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>DisplaySwitcher-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8167F29055BD4E48CC0ABAB87F00609E</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>E01F0D77F3BAA913766049C708CA9B85</string>
+			<key>remoteInfo</key>
+			<string>DisplaySwitcher</string>
+		</dict>
+		<key>847D36CA8C72CF6BA83F0C86AB53E968</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DBC79D6AA268F150E72B845DF4ED6A34</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>TransitionManager</string>
+			<key>path</key>
+			<string>TransitionManager</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>84CA9ABDECB0DF7A464FD2F7BAD564D6</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>DF5A7A1182ABB23AE4B1647B53706A6B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Layouts</string>
+			<key>path</key>
+			<string>Layouts</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8CE9BFE228ED903BD2FEAF6D5D0437B0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-DisplaySwitcher_Tests-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>90C0A689D7F2721971E86D668128255B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>63F140D9077090C024774B3A532BA654</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>928063B48F506E2DFCFCEEA67C5857C0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>DisplaySwitcher-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9777F2DBB3AC07DD4B32D441443118A5</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>9BEC456B22FFE4DF914A1875FD5A176D</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-DisplaySwitcher_Tests/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-DisplaySwitcher_Tests/Pods-DisplaySwitcher_Tests.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_DisplaySwitcher_Tests</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>98458304019EB6C5A92301A9B2390227</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9AD2073390690A8286C655C75DA318CF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E4E89230EF59BC255123B67864ACF77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9BEC456B22FFE4DF914A1875FD5A176D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-DisplaySwitcher_Tests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9D562BA50DC01A53789957BEA77D5157</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>DisplaySwitcher-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A639FB8A03FC8EE1BEA9F5E8621258D5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7E3D7D530D5F87952C7779E5872038E5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A70CDAD61F90AC503C7D04CC22DA2923</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>A831990F8178220C498E2A5E2C0000E3</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>84CA9ABDECB0DF7A464FD2F7BAD564D6</string>
+				<string>E4D6559985EF5986095C455A8A138EFC</string>
+				<string>847D36CA8C72CF6BA83F0C86AB53E968</string>
+				<string>1F4DE42F6DE81C8EB154A2FF507A11B0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Classes</string>
+			<key>path</key>
+			<string>Classes</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AC90AF4A5993CEAA1A819CB4438594F8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-DisplaySwitcher_Example.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AD2EDCBD9280632A22F023C28E7A2C0B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-DisplaySwitcher_Example-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B0D5E1EAB1A43D16AFDA8CEA22E588AB</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>1170F0A8956A13D2ED245C3D98A9CB79</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/DisplaySwitcher/DisplaySwitcher-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/DisplaySwitcher/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/DisplaySwitcher/DisplaySwitcher.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>DisplaySwitcher</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>B7CE4CE7A9289EB30585817EDBE616F3</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>33216D30C80A2315C1874602C5BD43E3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>B8F256FAAC39AD7D0B16A704DA35AA73</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-DisplaySwitcher_Tests-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BA6428E9F66FD5A23C0A2E06ED26CD2F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>name</key>
+			<string>Podfile</string>
+			<key>path</key>
+			<string>../Podfile</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.ruby</string>
+		</dict>
+		<key>BC3CA7F9E30CC8F7E2DD044DD34432FC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BF6342C8B29F4CEEA088EFF7AB4DE362</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BF6342C8B29F4CEEA088EFF7AB4DE362</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3E4E89230EF59BC255123B67864ACF77</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>iOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C42C6309F50B81BB75967535867A3D74</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>98458304019EB6C5A92301A9B2390227</string>
+				<string>DF09F695146B2DF19B0305C12E00635E</string>
+				<string>D18B1DF5821235EF7CC994C4AB2F29FE</string>
+				<string>66FCE5DE932F0DB83636BB30A4E1C376</string>
+				<string>57481DEE305B9C020B2D54C0BA2B6112</string>
+				<string>AD2EDCBD9280632A22F023C28E7A2C0B</string>
+				<string>EEBA1EF9F84FC0D07B6C5B41AC1A1679</string>
+				<string>7586CEA4E1FBDFF847B640883A82444D</string>
+				<string>5E1284D2DB6C84957DB00F97554A5C96</string>
+				<string>AC90AF4A5993CEAA1A819CB4438594F8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-DisplaySwitcher_Example</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-DisplaySwitcher_Example</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C4B5139F8658A029AA1E4B2CDD3FECF7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CAECE181C8DB31F1ADC8123AB9DC7B14</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DBC79D6AA268F150E72B845DF4ED6A34</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D18B1DF5821235EF7CC994C4AB2F29FE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-DisplaySwitcher_Example-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D41D8CD98F00B204E9800998ECF8427E</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0700</string>
+				<key>LastUpgradeCheck</key>
+				<string>0700</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>7DB346D0F39D3F0E887471402A8071AB</string>
+			<key>productRefGroup</key>
+			<string>F5FC86C54D8C2A9EE1E540EA05ACBDE8</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>E01F0D77F3BAA913766049C708CA9B85</string>
+				<string>44B0BBF94B605B0095DE997B31564866</string>
+				<string>676EAD6AD554B599AE82D8078B6378A0</string>
+			</array>
+		</dict>
+		<key>D500F4569E42782756CFB3AFA5C62C64</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>70F75354FF8AF6D60142D82D3265A688</string>
+				<string>1170F0A8956A13D2ED245C3D98A9CB79</string>
+				<string>7E3D7D530D5F87952C7779E5872038E5</string>
+				<string>9D562BA50DC01A53789957BEA77D5157</string>
+				<string>928063B48F506E2DFCFCEEA67C5857C0</string>
+				<string>E84FB7850D7BA11C3D17BA58EA7FF598</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>Example/Pods/Target Support Files/DisplaySwitcher</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D856F8120470DB6FEB01EF88E450578E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F2CB6C1890E2B06F11AD668BA56467E9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>RotationButton</string>
+			<key>path</key>
+			<string>RotationButton</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DBC79D6AA268F150E72B845DF4ED6A34</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>TransitionManager.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DCD7072EBDC7E8B513716335D59D789C</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>DisplaySwitcher</string>
+			<key>target</key>
+			<string>E01F0D77F3BAA913766049C708CA9B85</string>
+			<key>targetProxy</key>
+			<string>8167F29055BD4E48CC0ABAB87F00609E</string>
+		</dict>
+		<key>DF09F695146B2DF19B0305C12E00635E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-DisplaySwitcher_Example.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DF5A7A1182ABB23AE4B1647B53706A6B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>62B62A7B928FFAAE5C39758E9657730A</string>
+				<string>296C9812AA9022DE19543564D8ED86A3</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>BaseLayout</string>
+			<key>path</key>
+			<string>BaseLayout</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E01F0D77F3BAA913766049C708CA9B85</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>39D8F5DA7BE2B5F1F3BF9E12C8D0C251</string>
+			<key>buildPhases</key>
+			<array>
+				<string>04D174E558D961BE8889EEB23C775C03</string>
+				<string>90C0A689D7F2721971E86D668128255B</string>
+				<string>21BAB1C9B4B05F60A0D0C01A2F971BE1</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>DisplaySwitcher</string>
+			<key>productName</key>
+			<string>DisplaySwitcher</string>
+			<key>productReference</key>
+			<string>1D3FEE79F342E0ED68D03BE8BFF22250</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>E0E4BEFE7593F513BAF2C0C4E20345AE</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>AC90AF4A5993CEAA1A819CB4438594F8</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-DisplaySwitcher_Example/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-DisplaySwitcher_Example/Pods-DisplaySwitcher_Example.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_DisplaySwitcher_Example</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>E4D6559985EF5986095C455A8A138EFC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4F36F4B1A3FEAAA2B3F3A41AC36E5B2B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>TransitionLayout</string>
+			<key>path</key>
+			<string>TransitionLayout</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E7AA04CF19A10BAB52A0AD3899B0B3D3</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>087F92CC16067071692D53CB278DF791</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-DisplaySwitcher_Tests/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-DisplaySwitcher_Tests/Pods-DisplaySwitcher_Tests.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_DisplaySwitcher_Tests</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>E84FB7850D7BA11C3D17BA58EA7FF598</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EC6E8479C691B6B3450E9417FB6D6073</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-DisplaySwitcher_Tests-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EEBA1EF9F84FC0D07B6C5B41AC1A1679</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-DisplaySwitcher_Example-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F2CB6C1890E2B06F11AD668BA56467E9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>RotationButton.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F5FC86C54D8C2A9EE1E540EA05ACBDE8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1D3FEE79F342E0ED68D03BE8BFF22250</string>
+				<string>2DFF6AB9AABDA8E56F13F23CE8D3E6FA</string>
+				<string>7394EB2BFD9275D23470E386495AB031</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F74B676CE1E109F36D8A61852C5CC1F5</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>5E1284D2DB6C84957DB00F97554A5C96</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-DisplaySwitcher_Example/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-DisplaySwitcher_Example/Pods-DisplaySwitcher_Example.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_DisplaySwitcher_Example</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>FB45FFD90572718D82AB9092B750F0CA</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>RELEASE=1</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>FBA879F5A84489EA4926771648AF0628</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-DisplaySwitcher_Tests-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>D41D8CD98F00B204E9800998ECF8427E</string>
+</dict>
+</plist>

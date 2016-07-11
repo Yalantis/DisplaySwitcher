@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2FFBC14CDAFFF054166EB19E /* Pods_DisplaySwitcher_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40923E5E97795B1363084FB8 /* Pods_DisplaySwitcher_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		2FFBC14CDAFFF054166EB19E /* Pods_DisplaySwitcher_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40923E5E97795B1363084FB8 /* Pods_DisplaySwitcher_Tests.framework */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		682681C658BB6E5E2F53B5A6 /* Pods_DisplaySwitcher_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31AD0EED62CD4A790C514ED9 /* Pods_DisplaySwitcher_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		682681C658BB6E5E2F53B5A6 /* Pods_DisplaySwitcher_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31AD0EED62CD4A790C514ED9 /* Pods_DisplaySwitcher_Example.framework */; };
 		77C5B43A1CBBCBA5008E92DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77C5B4181CBBCBA5008E92DD /* AppDelegate.swift */; };
 		77C5B43B1CBBCBA5008E92DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77C5B41A1CBBCBA5008E92DD /* LaunchScreen.storyboard */; };
 		77C5B43C1CBBCBA5008E92DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77C5B41C1CBBCBA5008E92DD /* Main.storyboard */; };
@@ -661,7 +661,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DisplaySwitcher/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -678,7 +678,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DisplaySwitcher/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
