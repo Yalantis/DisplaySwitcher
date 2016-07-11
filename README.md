@@ -9,7 +9,7 @@ This component implements custom transition between two collection view layouts 
 
 Check this <a href="https://dribbble.com/shots/2276068-Contact-Display-Switch">project on dribbble</a>.
 
-Also, read how it was done in [our blog](…)
+Also, read how it was done in [our blog](https://yalantis.com/blog/contact-display-switch-animation/)
 
 ##Requirements
 - iOS 8.0+ (for component), iOS 9.0+ (for example)
