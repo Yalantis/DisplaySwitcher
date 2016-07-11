@@ -44,7 +44,7 @@ class UserViewController: UIViewController {
     }
     
     private func addGestureRecognizerToNavBar() {
-        let tapRecognizer = UITapGestureRecognizer(target: self, action: "tapRecognized")
+        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(UserViewController.tapRecognized))
         navigationController!.navigationBar.addGestureRecognizer(tapRecognizer)
     }
     

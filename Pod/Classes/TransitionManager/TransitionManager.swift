@@ -44,7 +44,7 @@ public class TransitionManager {
     // MARK: - Private methods
     private func createUpdaterAndStart() {
         start = CACurrentMediaTime()
-        updater = CADisplayLink(target: self, selector: Selector("updateTransitionProgress"))
+        updater = CADisplayLink(target: self, selector: #selector(updateTransitionProgress))
         updater.frameInterval = 1
         updater.addToRunLoop(NSRunLoop.currentRunLoop(), forMode: NSRunLoopCommonModes)
     }
