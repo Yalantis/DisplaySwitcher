@@ -1,6 +1,5 @@
 import UIKit
 import XCTest
-import DisplaySwitcher
 
 class Tests: XCTestCase {
     

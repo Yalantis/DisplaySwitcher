@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '700B414CFB2576ADBFCFCDED'
+               BlueprintIdentifier = '0A9C3AD762A231FE68BAFFA0'
                BlueprintName = 'DisplaySwitcher'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'DisplaySwitcher.framework'>

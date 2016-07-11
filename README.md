@@ -5,7 +5,7 @@ This component implements custom transition between two collection view layouts 
 
 [![Yalantis](https://raw.githubusercontent.com/Yalantis/PullToRefresh/develop/PullToRefreshDemo/Resources/badge_dark.png)](https://yalantis.com/?utm_source=github)
 
-<img src="https://d13yacurqjgara.cloudfront.net/users/116693/screenshots/2276068/open-uri20151005-3-walc59" />
+![Preview](https://github.com/Yalantis/DisplaySwitcher/blob/master/Assets/animation.gif)
 
 Check this <a href="https://dribbble.com/shots/2276068-Contact-Display-Switch">project on dribbble</a>.
 
