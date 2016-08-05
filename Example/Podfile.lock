@@ -6,9 +6,11 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   DisplaySwitcher:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
   DisplaySwitcher: c23a4f751a7994de130612e9c669f8684a2cc540
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 42d5f6f39d2fc86145445fd75dbb433b043dcc98
+
+COCOAPODS: 1.0.1

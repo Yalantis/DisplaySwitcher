@@ -1,12 +1,8 @@
-source 'https://github.com/CocoaPods/Specs.git'
-use_frameworks!
+platform :ios, '9.0'
 
-target 'DisplaySwitcher_Example', :exclusive => true do
-  pod 'DisplaySwitcher', :path => '../'
-  
-end
+target 'DisplaySwitcher_Example' do
 
-target 'DisplaySwitcher_Tests', :exclusive => true do
+  use_frameworks!
   pod 'DisplaySwitcher', :path => '../'
   
 end
