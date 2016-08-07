@@ -20,6 +20,7 @@ class UserViewController: UIViewController {
     @IBOutlet private weak var searchBar: UISearchBar!
     @IBOutlet private weak var rotationButton: RotationButton!
     
+    private var tap:UITapGestureRecognizer!
     private var users = UserDataProvider().generateFakeUsers()
     private var searchUsers = [User]()
     private var isTransitionAvailable = true
@@ -34,18 +35,12 @@ class UserViewController: UIViewController {
         searchUsers = users
         rotationButton.selected = true
         setupCollectionView()
-        addGestureRecognizerToNavBar()
     }
     
     // MARK: - Private methods
     private func setupCollectionView() {
         collectionView.collectionViewLayout = listLayout
         collectionView.registerNib(UserCollectionViewCell.cellNib, forCellWithReuseIdentifier:UserCollectionViewCell.id)
-    }
-    
-    private func addGestureRecognizerToNavBar() {
-        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(UserViewController.tapRecognized))
-        navigationController!.navigationBar.addGestureRecognizer(tapRecognizer)
     }
     
     // MARK: - Actions
@@ -123,5 +118,24 @@ extension UserViewController {
         collectionView.reloadData()
     }
     
+    func collectionView(collectionView: UICollectionView,
+                        didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        print("Hi \(indexPath.row)")
+    }
+    
+    func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
+        
+        tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+        
+        view.addGestureRecognizer(tap)
+    }
+    
+    func searchBarTextDidEndEditing(searchBar: UISearchBar) {
+        view.removeGestureRecognizer(tap)
+    }
+    
+    func handleTap() {
+        view.endEditing(true)
+    }
 }
     
