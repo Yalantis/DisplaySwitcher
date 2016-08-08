@@ -20,7 +20,7 @@ class UserViewController: UIViewController {
     @IBOutlet private weak var searchBar: UISearchBar!
     @IBOutlet private weak var rotationButton: RotationButton!
     
-    private var tap:UITapGestureRecognizer!
+    private var tap: UITapGestureRecognizer!
     private var users = UserDataProvider().generateFakeUsers()
     private var searchUsers = [User]()
     private var isTransitionAvailable = true
@@ -124,9 +124,7 @@ extension UserViewController {
     }
     
     func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
-        
         tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
-        
         view.addGestureRecognizer(tap)
     }
     
