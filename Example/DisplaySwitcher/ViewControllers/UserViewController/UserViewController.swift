@@ -32,6 +32,8 @@ class UserViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       
+        tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+        
         searchUsers = users
         rotationButton.selected = true
         setupCollectionView()
@@ -118,13 +120,11 @@ extension UserViewController {
         collectionView.reloadData()
     }
     
-    func collectionView(collectionView: UICollectionView,
-                        didSelectItemAtIndexPath indexPath: NSIndexPath) {
+    func collectionView(collectionView: UICollectionView,didSelectItemAtIndexPath indexPath: NSIndexPath) {
         print("Hi \(indexPath.row)")
     }
     
     func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
-        tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
         view.addGestureRecognizer(tap)
     }
     
