@@ -10,55 +10,57 @@ import UIKit
 
 private let finishTransitionValue = 1.0
 
-public class TransitionManager {
+open class TransitionManager {
     
-    private var duration: NSTimeInterval
-    private var collectionView: UICollectionView
-    private var destinationLayout: UICollectionViewLayout
-    private var layoutState: CollectionViewLayoutState
-    private var transitionLayout: TransitionLayout!
-    private var updater: CADisplayLink!
-    private var start: NSTimeInterval!
+    fileprivate let duration: TimeInterval
+    fileprivate let collectionView: UICollectionView
+    fileprivate let destinationLayout: UICollectionViewLayout
+    fileprivate let layoutState: CollectionViewLayoutState
+    fileprivate var transitionLayout: TransitionLayout!
+    fileprivate var updater: CADisplayLink!
+    fileprivate var startTime: TimeInterval!
     
-    // MARK: - Lifecycle
-    public init(duration: NSTimeInterval, collectionView: UICollectionView, destinationLayout: UICollectionViewLayout, layoutState: CollectionViewLayoutState) {
+    public init(duration: TimeInterval, collectionView: UICollectionView, destinationLayout: UICollectionViewLayout, layoutState: CollectionViewLayoutState) {
         self.collectionView = collectionView
         self.destinationLayout = destinationLayout
         self.layoutState = layoutState
         self.duration = duration
     }
     
-    // MARK: - Public methods
-    public func startInteractiveTransition() {
-        UIApplication.sharedApplication().beginIgnoringInteractionEvents()
-        transitionLayout = collectionView.startInteractiveTransitionToCollectionViewLayout(destinationLayout, completion: { success, finish in
+    open func startInteractiveTransition() {
+        UIApplication.shared.beginIgnoringInteractionEvents()
+        transitionLayout = collectionView.startInteractiveTransition(to: destinationLayout) { success, finish in
             if success && finish {
                 self.collectionView.reloadData()
-                UIApplication.sharedApplication().endIgnoringInteractionEvents()
+                UIApplication.shared.endIgnoringInteractionEvents()
             }
-        }) as! TransitionLayout
+        } as! TransitionLayout
         transitionLayout.layoutState = layoutState
         createUpdaterAndStart()
     }
     
-    // MARK: - Private methods
-    private func createUpdaterAndStart() {
-        start = CACurrentMediaTime()
+}
+
+fileprivate extension TransitionManager {
+    
+    func createUpdaterAndStart() {
+        startTime = CACurrentMediaTime()
         updater = CADisplayLink(target: self, selector: #selector(updateTransitionProgress))
         updater.frameInterval = 1
-        updater.addToRunLoop(NSRunLoop.currentRunLoop(), forMode: NSRunLoopCommonModes)
+        updater.add(to: RunLoop.current, forMode: .commonModes)
     }
     
     dynamic func updateTransitionProgress() {
-        var progress = (updater.timestamp - start) / duration
+        var progress = (updater.timestamp - startTime) / duration
         progress = min(1, progress)
         progress = max(0, progress)
         transitionLayout.transitionProgress = CGFloat(progress)
-      
+        
         transitionLayout.invalidateLayout()
         if progress == finishTransitionValue {
             collectionView.finishInteractiveTransition()
             updater.invalidate()
         }
     }
+    
 }

@@ -9,24 +9,24 @@
 import UIKit
 import DisplaySwitcher
 
-private let animationDuration: NSTimeInterval = 0.3
+private let animationDuration: TimeInterval = 0.3
 
 private let listLayoutStaticCellHeight: CGFloat = 80
 private let gridLayoutStaticCellHeight: CGFloat = 165
 
 class UserViewController: UIViewController {
     
-    @IBOutlet private weak var collectionView: UICollectionView!
-    @IBOutlet private weak var searchBar: UISearchBar!
-    @IBOutlet private weak var rotationButton: RotationButton!
+    @IBOutlet fileprivate weak var collectionView: UICollectionView!
+    @IBOutlet fileprivate weak var searchBar: UISearchBar!
+    @IBOutlet fileprivate weak var rotationButton: RotationButton!
     
-    private var tap: UITapGestureRecognizer!
-    private var users = UserDataProvider().generateFakeUsers()
-    private var searchUsers = [User]()
-    private var isTransitionAvailable = true
-    private lazy var listLayout = BaseLayout(staticCellHeight: listLayoutStaticCellHeight, nextLayoutStaticCellHeight: gridLayoutStaticCellHeight, layoutState: .ListLayoutState)
-    private lazy var gridLayout = BaseLayout(staticCellHeight: gridLayoutStaticCellHeight, nextLayoutStaticCellHeight: listLayoutStaticCellHeight, layoutState: .GridLayoutState)
-    private var layoutState: CollectionViewLayoutState = .ListLayoutState
+    fileprivate var tap: UITapGestureRecognizer!
+    fileprivate var users = UserDataProvider().generateFakeUsers()
+    fileprivate var searchUsers = [User]()
+    fileprivate var isTransitionAvailable = true
+    fileprivate lazy var listLayout = BaseLayout(staticCellHeight: listLayoutStaticCellHeight, nextLayoutStaticCellHeight: gridLayoutStaticCellHeight, layoutState: .list)
+    fileprivate lazy var gridLayout = BaseLayout(staticCellHeight: gridLayoutStaticCellHeight, nextLayoutStaticCellHeight: listLayoutStaticCellHeight, layoutState: .grid)
+    fileprivate var layoutState: CollectionViewLayoutState = .list
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -35,31 +35,31 @@ class UserViewController: UIViewController {
         tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
         
         searchUsers = users
-        rotationButton.selected = true
+        rotationButton.isSelected = true
         setupCollectionView()
     }
     
     // MARK: - Private methods
-    private func setupCollectionView() {
+    fileprivate func setupCollectionView() {
         collectionView.collectionViewLayout = listLayout
-        collectionView.registerNib(UserCollectionViewCell.cellNib, forCellWithReuseIdentifier:UserCollectionViewCell.id)
+        collectionView.register(UserCollectionViewCell.cellNib, forCellWithReuseIdentifier:UserCollectionViewCell.id)
     }
     
     // MARK: - Actions
-    @IBAction func buttonTapped(sender: AnyObject) {
+    @IBAction func buttonTapped(_ sender: AnyObject) {
         if !isTransitionAvailable {
             return
         }
         let transitionManager: TransitionManager
-        if layoutState == .ListLayoutState {
-            layoutState = .GridLayoutState
+        if layoutState == .list {
+            layoutState = .grid
             transitionManager = TransitionManager(duration: animationDuration, collectionView: collectionView!, destinationLayout: gridLayout, layoutState: layoutState)
         } else {
-            layoutState = .ListLayoutState
+            layoutState = .list
             transitionManager = TransitionManager(duration: animationDuration, collectionView: collectionView!, destinationLayout: listLayout, layoutState: layoutState)
         }
         transitionManager.startInteractiveTransition()
-        rotationButton.selected = layoutState == .ListLayoutState
+        rotationButton.isSelected = layoutState == .list
         rotationButton.animationDuration = animationDuration
     }
     
@@ -72,37 +72,37 @@ class UserViewController: UIViewController {
 extension UserViewController {
     
     // MARK: - UICollectionViewDataSource
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return searchUsers.count
     }
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier(UserCollectionViewCell.id, forIndexPath: indexPath) as! UserCollectionViewCell
-        if layoutState == .GridLayoutState {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAtIndexPath indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: UserCollectionViewCell.id, for: indexPath) as! UserCollectionViewCell
+        if layoutState == .grid {
             cell.setupGridLayoutConstraints(1, cellWidth: cell.frame.width)
         } else {
             cell.setupListLayoutConstraints(1, cellWidth: cell.frame.width)
         }
-        cell.bind(searchUsers[indexPath.row])
+        cell.bind(searchUsers[(indexPath as NSIndexPath).row])
         
         return cell
     }
     
     // MARK: - UICollectionViewDelegate
-    func collectionView(collectionView: UICollectionView, transitionLayoutForOldLayout fromLayout: UICollectionViewLayout, newLayout toLayout: UICollectionViewLayout) -> UICollectionViewTransitionLayout {
+    func collectionView(_ collectionView: UICollectionView, transitionLayoutForOldLayout fromLayout: UICollectionViewLayout, newLayout toLayout: UICollectionViewLayout) -> UICollectionViewTransitionLayout {
         let customTransitionLayout = TransitionLayout(currentLayout: fromLayout, nextLayout: toLayout)
         return customTransitionLayout
     }
     
-    func scrollViewWillBeginDragging(scrollView: UIScrollView) {
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         isTransitionAvailable = false
     }
     
-    func scrollViewDidEndDragging(scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         isTransitionAvailable = true
     }
     
-    func scrollViewDidScroll(scrollView: UIScrollView) {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
         view.endEditing(true)
     }
     
@@ -110,30 +110,31 @@ extension UserViewController {
 
 extension UserViewController {
     
-    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText.isEmpty {
             searchUsers = users
         } else {
-            searchUsers = searchUsers.filter { return $0.name.containsString(searchText) }
+            searchUsers = searchUsers.filter { return $0.name.contains(searchText) }
         }
       
         collectionView.reloadData()
     }
     
-    func collectionView(collectionView: UICollectionView,didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        print("Hi \(indexPath.row)")
+    func collectionView(_ collectionView: UICollectionView,didSelectItemAtIndexPath indexPath: IndexPath) {
+        print("Hi \((indexPath as NSIndexPath).row)")
     }
     
-    func searchBarTextDidBeginEditing(searchBar: UISearchBar) {
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
         view.addGestureRecognizer(tap)
     }
     
-    func searchBarTextDidEndEditing(searchBar: UISearchBar) {
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
         view.removeGestureRecognizer(tap)
     }
     
     func handleTap() {
         view.endEditing(true)
     }
+    
 }
     

@@ -13,22 +13,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         let navigationBarAppearace = UINavigationBar.appearance()
         navigationBarAppearace.titleTextAttributes = ([NSFontAttributeName: UIFont(name: "Dosis-SemiBold", size: 21)!,
                 NSForegroundColorAttributeName: UIColor.navigationBarTintColor()])
         UINavigationBar.appearance().barTintColor = UIColor.navigationBarBackgroundColor()
-        navigationBarAppearace.translucent = false
+        navigationBarAppearace.isTranslucent = false
         
-        UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent
+        UIApplication.shared.statusBarStyle = .lightContent
       
-        UITextField.appearanceWhenContainedInInstancesOfClasses([UISearchBar.self]).backgroundColor = .blackColor()
-        UITextField.appearanceWhenContainedInInstancesOfClasses([UISearchBar.self]).tintColor = .lightGrayColor()
-        UITextField.appearanceWhenContainedInInstancesOfClasses([UISearchBar.self]).textColor = .lightGrayColor()
+        UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).backgroundColor = .black
+        UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).tintColor = .lightGray
+        UITextField.appearance(whenContainedInInstancesOf: [UISearchBar.self]).textColor = .lightGray
         
         return true
     }
     
-
 }
-

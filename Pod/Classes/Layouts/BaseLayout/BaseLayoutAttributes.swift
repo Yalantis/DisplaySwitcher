@@ -8,14 +8,14 @@
 
 import UIKit
 
-public class BaseLayoutAttributes: UICollectionViewLayoutAttributes {
+open class BaseLayoutAttributes: UICollectionViewLayoutAttributes {
     
-   public var transitionProgress: CGFloat = 0.0
-   public var nextLayoutCellFrame = CGRectZero
-   public var layoutState: CollectionViewLayoutState = .ListLayoutState
+    open var transitionProgress: CGFloat = 0.0
+    open var nextLayoutCellFrame: CGRect = .zero
+    open var layoutState: CollectionViewLayoutState = .list
     
-    override public func copyWithZone(zone: NSZone) -> AnyObject {
-        let copy = super.copyWithZone(zone) as! BaseLayoutAttributes
+    override open func copy(with zone: NSZone?) -> Any {
+        let copy = super.copy(with: zone) as! BaseLayoutAttributes
         copy.transitionProgress = transitionProgress
         copy.nextLayoutCellFrame = nextLayoutCellFrame
         copy.layoutState = layoutState
@@ -23,14 +23,10 @@ public class BaseLayoutAttributes: UICollectionViewLayoutAttributes {
         return copy
     }
     
-    override public func isEqual(object: AnyObject?) -> Bool {
-        if let attributes = object as? BaseLayoutAttributes {
-            if attributes.transitionProgress == transitionProgress && nextLayoutCellFrame == nextLayoutCellFrame  && layoutState == layoutState {
-                return super.isEqual(object)
-            }
-        }
-        
-        return false
-    }
+    override open func isEqual(_ object: Any?) -> Bool {
+        guard let attributes = object as? BaseLayoutAttributes else { return false }
+        guard attributes.transitionProgress == transitionProgress && nextLayoutCellFrame == nextLayoutCellFrame && layoutState == layoutState else { return false }
     
+        return super.isEqual(object)
+    }
 }

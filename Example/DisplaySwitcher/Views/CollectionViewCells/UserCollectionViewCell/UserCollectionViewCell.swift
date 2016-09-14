@@ -13,15 +13,15 @@ private let avatarListLayoutSize: CGFloat = 80.0
 
 class UserCollectionViewCell: UICollectionViewCell, CellInterface {
     
-    @IBOutlet private weak var avatarImageView: UIImageView!
-    @IBOutlet private weak var backgroundGradientView: UIView!
-    @IBOutlet private weak var nameListLabel: UILabel!
-    @IBOutlet private weak var nameGridLabel: UILabel!
+    @IBOutlet fileprivate weak var avatarImageView: UIImageView!
+    @IBOutlet fileprivate weak var backgroundGradientView: UIView!
+    @IBOutlet fileprivate weak var nameListLabel: UILabel!
+    @IBOutlet fileprivate weak var nameGridLabel: UILabel!
     @IBOutlet weak var statisticLabel: UILabel!
     
     // avatarImageView constraints
-    @IBOutlet private weak var avatarImageViewWidthConstraint: NSLayoutConstraint!
-    @IBOutlet private weak var avatarImageViewHeightConstraint: NSLayoutConstraint!
+    @IBOutlet fileprivate weak var avatarImageViewWidthConstraint: NSLayoutConstraint!
+    @IBOutlet fileprivate weak var avatarImageViewHeightConstraint: NSLayoutConstraint!
     
     // nameListLabel constraints
     @IBOutlet var nameListLabelLeadingConstraint: NSLayoutConstraint! {
@@ -33,10 +33,10 @@ class UserCollectionViewCell: UICollectionViewCell, CellInterface {
     // statisticLabel constraints
     @IBOutlet weak var statisticLabelLeadingConstraint: NSLayoutConstraint!
     
-    private var avatarGridLayoutSize: CGFloat = 0.0
-    private var initialLabelsLeadingConstraintValue: CGFloat = 0.0
+    fileprivate var avatarGridLayoutSize: CGFloat = 0.0
+    fileprivate var initialLabelsLeadingConstraintValue: CGFloat = 0.0
     
-    func bind(user: User) {
+    func bind(_ user: User) {
         avatarImageView.image = user.avatar
         nameListLabel.text = user.name.localized + " " + user.surname.localized
         nameGridLabel.text = nameListLabel.text
@@ -46,7 +46,7 @@ class UserCollectionViewCell: UICollectionViewCell, CellInterface {
         statisticLabel.text = userPostsString + userCommentsString + userLikesString
     }
     
-    func setupGridLayoutConstraints(transitionProgress: CGFloat, cellWidth: CGFloat) {
+    func setupGridLayoutConstraints(_ transitionProgress: CGFloat, cellWidth: CGFloat) {
         avatarImageViewHeightConstraint.constant = ceil((cellWidth - avatarListLayoutSize) * transitionProgress + avatarListLayoutSize)
         avatarImageViewWidthConstraint.constant = ceil(avatarImageViewHeightConstraint.constant)
         nameListLabelLeadingConstraint.constant = -avatarImageViewWidthConstraint.constant * transitionProgress + initialLabelsLeadingConstraintValue
@@ -56,7 +56,7 @@ class UserCollectionViewCell: UICollectionViewCell, CellInterface {
         statisticLabel.alpha = 1 - transitionProgress
     }
     
-    func setupListLayoutConstraints(transitionProgress: CGFloat, cellWidth: CGFloat) {
+    func setupListLayoutConstraints(_ transitionProgress: CGFloat, cellWidth: CGFloat) {
         avatarImageViewHeightConstraint.constant = ceil(avatarGridLayoutSize - (avatarGridLayoutSize - avatarListLayoutSize) * transitionProgress)
         avatarImageViewWidthConstraint.constant = avatarImageViewHeightConstraint.constant 
         nameListLabelLeadingConstraint.constant = avatarImageViewWidthConstraint.constant * transitionProgress + (initialLabelsLeadingConstraintValue - avatarImageViewHeightConstraint.constant)
@@ -66,15 +66,15 @@ class UserCollectionViewCell: UICollectionViewCell, CellInterface {
         statisticLabel.alpha = transitionProgress
     }
     
-    override func applyLayoutAttributes(layoutAttributes: UICollectionViewLayoutAttributes) {
-        super.applyLayoutAttributes(layoutAttributes)
+    override func apply(_ layoutAttributes: UICollectionViewLayoutAttributes) {
+        super.apply(layoutAttributes)
         if let attributes = layoutAttributes as? BaseLayoutAttributes {
             if attributes.transitionProgress > 0 {
-                if attributes.layoutState == .GridLayoutState {
-                    setupGridLayoutConstraints(attributes.transitionProgress, cellWidth: CGRectGetWidth(attributes.nextLayoutCellFrame))
-                    avatarGridLayoutSize = CGRectGetWidth(attributes.nextLayoutCellFrame)
+                if attributes.layoutState == .grid {
+                    setupGridLayoutConstraints(attributes.transitionProgress, cellWidth: attributes.nextLayoutCellFrame.width)
+                    avatarGridLayoutSize = attributes.nextLayoutCellFrame.width
                 } else {
-                    setupListLayoutConstraints(attributes.transitionProgress, cellWidth: CGRectGetWidth(attributes.nextLayoutCellFrame))
+                    setupListLayoutConstraints(attributes.transitionProgress, cellWidth: attributes.nextLayoutCellFrame.width)
                 }
             }
         }
