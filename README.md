@@ -1,9 +1,12 @@
 # Display Switcher
-[![Platform](http://img.shields.io/badge/platform-iOS-blue.svg?style=flat)](http://cocoapods.org/?q=YALSideMenu) [![License](http://img.shields.io/badge/license-MIT-green.svg?style=flat)]() [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+
+[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/DisplaySwitcher.svg)](https://img.shields.io/cocoapods/v/DisplaySwitcher.svg)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Platform](http://img.shields.io/badge/platform-iOS-blue.svg?style=flat)](http://cocoapods.org/?q=YALSideMenu) 
+[![License](http://img.shields.io/badge/license-MIT-green.svg?style=flat)]() 
+[![Yalantis](https://raw.githubusercontent.com/Yalantis/PullToRefresh/develop/PullToRefreshDemo/Resources/badge_dark.png)](https://yalantis.com/?utm_source=github)
 
 This component implements custom transition between two collection view layouts with custom animation duration.
-
-[![Yalantis](https://raw.githubusercontent.com/Yalantis/PullToRefresh/develop/PullToRefreshDemo/Resources/badge_dark.png)](https://yalantis.com/?utm_source=github)
 
 ![Preview](https://github.com/Yalantis/DisplaySwitcher/blob/master/Assets/animation.gif)
 
@@ -12,31 +15,33 @@ Check this <a href="https://dribbble.com/shots/2276068-Contact-Display-Switch">p
 Also, read how it was done in [our blog](https://yalantis.com/blog/contact-display-switch-animation/)
 
 ##Requirements
-- iOS 8.0+ (for component), iOS 9.0+ (for example)
-- Xcode 7
-- Swift 2
+- iOS 8.0+
+- Xcode 8
+- Swift 3
 
 ##Installing with [CocoaPods](https://cocoapods.org)
 
 ```ruby
 use_frameworks!
-pod ‘DisplaySwitcher’, '~> 0.1.1’
+pod ‘DisplaySwitcher’, '~> 1.0’
 ```
 
 ##Installing with [Carthage](https://github.com/Carthage/Carthage)
 
 ```ruby
-github "Yalantis/DisplaySwitcher" ~> 0.1.0
+github "Yalantis/DisplaySwitcher" ~> 1.0
 ```
 
 ##Usage
 
 At first, import DisplaySwitcher:
+
 ```swift
 import DisplaySwitcher
 ```
 
-Then create two layouts (layout for list mode and grid mode):
+Then create two layouts (list mode and grid mode):
+
 ```swift
 private lazy var listLayout = BaseLayout(staticCellHeight: listLayoutStaticCellHeight, nextLayoutStaticCellHeight: gridLayoutStaticCellHeight, layoutState: .ListLayoutState)
 
@@ -44,12 +49,14 @@ private lazy var gridLayout = BaseLayout(staticCellHeight: gridLayoutStaticCellH
 ```
 
 Set current layout:
+
 ```swift
 private var layoutState: CollectionViewLayoutState = .ListLayoutState
 collectionView.collectionViewLayout = listLayout
 ```
 
 Then override two UICollectionViewDataSource methods:
+
 ```swift
 func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
     // count of items
@@ -61,13 +68,16 @@ func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath ind
 ```
 
 Also override one UICollectionViewDelegate method (for custom layout transition):
+
 ```swift
 func collectionView(collectionView: UICollectionView, transitionLayoutForOldLayout fromLayout: UICollectionViewLayout, newLayout toLayout: UICollectionViewLayout) -> UICollectionViewTransitionLayout {
     let customTransitionLayout = TransitionLayout(currentLayout: fromLayout, nextLayout: toLayout)
     return customTransitionLayout
 }
 ```
+
 And in the end necessary create transition and start it (you can simply change animation duration for transition layout and for rotation button):
+
 ```swift
 let transitionManager: TransitionManager
 if layoutState == .ListLayoutState {
@@ -113,4 +123,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
-
