@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		017A521D0BA7A4B151ABAEBD3DE7B8FA /* RotationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CB6C1890E2B06F11AD668BA56467E9 /* RotationButton.swift */; };
 		02AC55A7E1E8529332616D9A460C0986 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		02AF2BC6C873084E6A80A7E4C6E8EF07 /* BaseLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B62A7B928FFAAE5C39758E9657730A /* BaseLayout.swift */; };
-		533DE0146817D10A4AEA8EC43854BD4B /* TransitionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F36F4B1A3FEAAA2B3F3A41AC36E5B2B /* TransitionLayout.swift */; };
-		5A5A1786676FA5BB11D4DB1956FBE0E6 /* BaseLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296C9812AA9022DE19543564D8ED86A3 /* BaseLayoutAttributes.swift */; };
+		33995EB47EF90F6514BFCE9D3852FBB9 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC79D6AA268F150E72B845DF4ED6A34 /* TransitionManager.swift */; };
+		4912E9AB32737F543934190FE6CF9D2C /* TransitionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F36F4B1A3FEAAA2B3F3A41AC36E5B2B /* TransitionLayout.swift */; };
 		5FC156D9B1229FCE8E3A67F6FEED2CEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		6C58204AA0FEBB8ACACED6AC9751A9CF /* DisplaySwitcher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 928063B48F506E2DFCFCEEA67C5857C0 /* DisplaySwitcher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FF2C672EFB0295443056753C48DE9F5 /* DisplaySwitchLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DE8A58C2091E146225966D4110CA91 /* DisplaySwitchLayout.swift */; };
 		9268E036B952F02B79AB7057AAA1961F /* Pods-DisplaySwitcher_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 830D1C416D36AB6729FBFC37832A24EF /* Pods-DisplaySwitcher_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A639FB8A03FC8EE1BEA9F5E8621258D5 /* DisplaySwitcher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3D7D530D5F87952C7779E5872038E5 /* DisplaySwitcher-dummy.m */; };
+		A88DE9AF1F74FA9FF76DD56FF6EA20CD /* DisplaySwitcher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3D7D530D5F87952C7779E5872038E5 /* DisplaySwitcher-dummy.m */; };
 		AAD996E961F0CB8FECEF0C5FFA67442F /* Pods-DisplaySwitcher_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8C4AC894AB9E2804442C1AAA2CC42D /* Pods-DisplaySwitcher_Example-dummy.m */; };
-		CAECE181C8DB31F1ADC8123AB9DC7B14 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC79D6AA268F150E72B845DF4ED6A34 /* TransitionManager.swift */; };
+		C412F978ADD68E054C1C11DDD4A17D01 /* RotationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2CB6C1890E2B06F11AD668BA56467E9 /* RotationButton.swift */; };
+		F881232C5947B1E5141BA816477BBF31 /* BaseLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9952EB7E22635CB94DFC6EEAA1F9E679 /* BaseLayoutAttributes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,21 +33,21 @@
 /* Begin PBXFileReference section */
 		1170F0A8956A13D2ED245C3D98A9CB79 /* DisplaySwitcher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DisplaySwitcher.xcconfig; sourceTree = "<group>"; };
 		1A88F8E53E5584B9C93C35EEF0C866D6 /* Pods-DisplaySwitcher_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DisplaySwitcher_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		296C9812AA9022DE19543564D8ED86A3 /* BaseLayoutAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BaseLayoutAttributes.swift; sourceTree = "<group>"; };
 		4070947A3342573C2AA1BBCD08464C72 /* Pods-DisplaySwitcher_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DisplaySwitcher_Example-frameworks.sh"; sourceTree = "<group>"; };
 		4E758E234FECC25CF2FBFFCC738D54D2 /* Pods_DisplaySwitcher_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DisplaySwitcher_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F36F4B1A3FEAAA2B3F3A41AC36E5B2B /* TransitionLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TransitionLayout.swift; sourceTree = "<group>"; };
 		536F281CE82EE5E3DBE9B074EAB62513 /* Pods-DisplaySwitcher_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DisplaySwitcher_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		5B949A70DD1B9E1B437BE3675C13D461 /* Pods-DisplaySwitcher_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DisplaySwitcher_Example.modulemap"; sourceTree = "<group>"; };
-		62B62A7B928FFAAE5C39758E9657730A /* BaseLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BaseLayout.swift; sourceTree = "<group>"; };
 		70F75354FF8AF6D60142D82D3265A688 /* DisplaySwitcher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DisplaySwitcher.modulemap; sourceTree = "<group>"; };
 		7E3D7D530D5F87952C7779E5872038E5 /* DisplaySwitcher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DisplaySwitcher-dummy.m"; sourceTree = "<group>"; };
 		830D1C416D36AB6729FBFC37832A24EF /* Pods-DisplaySwitcher_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DisplaySwitcher_Example-umbrella.h"; sourceTree = "<group>"; };
 		8CE6789414BDDE48252F2B922FE8C58A /* Pods-DisplaySwitcher_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DisplaySwitcher_Example-resources.sh"; sourceTree = "<group>"; };
 		928063B48F506E2DFCFCEEA67C5857C0 /* DisplaySwitcher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DisplaySwitcher-umbrella.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9952EB7E22635CB94DFC6EEAA1F9E679 /* BaseLayoutAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BaseLayoutAttributes.swift; sourceTree = "<group>"; };
 		9D562BA50DC01A53789957BEA77D5157 /* DisplaySwitcher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DisplaySwitcher-prefix.pch"; sourceTree = "<group>"; };
 		A97006B8EB56F4301383873A6FFD8F25 /* DisplaySwitcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DisplaySwitcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3DE8A58C2091E146225966D4110CA91 /* DisplaySwitchLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DisplaySwitchLayout.swift; sourceTree = "<group>"; };
 		CD8C4AC894AB9E2804442C1AAA2CC42D /* Pods-DisplaySwitcher_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DisplaySwitcher_Example-dummy.m"; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CF11501A944DC601031B5971DADE6E33 /* Pods-DisplaySwitcher_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DisplaySwitcher_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -160,7 +160,7 @@
 		84CA9ABDECB0DF7A464FD2F7BAD564D6 /* Layouts */ = {
 			isa = PBXGroup;
 			children = (
-				DF5A7A1182ABB23AE4B1647B53706A6B /* BaseLayout */,
+				CB20FE00CBAEB92DBF271E0EE55861D6 /* BaseLayout */,
 			);
 			path = Layouts;
 			sourceTree = "<group>";
@@ -193,6 +193,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CB20FE00CBAEB92DBF271E0EE55861D6 /* BaseLayout */ = {
+			isa = PBXGroup;
+			children = (
+				9952EB7E22635CB94DFC6EEAA1F9E679 /* BaseLayoutAttributes.swift */,
+				B3DE8A58C2091E146225966D4110CA91 /* DisplaySwitchLayout.swift */,
+			);
+			path = BaseLayout;
+			sourceTree = "<group>";
+		};
 		D500F4569E42782756CFB3AFA5C62C64 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,15 +222,6 @@
 				F2CB6C1890E2B06F11AD668BA56467E9 /* RotationButton.swift */,
 			);
 			path = RotationButton;
-			sourceTree = "<group>";
-		};
-		DF5A7A1182ABB23AE4B1647B53706A6B /* BaseLayout */ = {
-			isa = PBXGroup;
-			children = (
-				62B62A7B928FFAAE5C39758E9657730A /* BaseLayout.swift */,
-				296C9812AA9022DE19543564D8ED86A3 /* BaseLayoutAttributes.swift */,
-			);
-			path = BaseLayout;
 			sourceTree = "<group>";
 		};
 		E4D6559985EF5986095C455A8A138EFC /* TransitionLayout */ = {
@@ -284,7 +284,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39D8F5DA7BE2B5F1F3BF9E12C8D0C251 /* Build configuration list for PBXNativeTarget "DisplaySwitcher" */;
 			buildPhases = (
-				04D174E558D961BE8889EEB23C775C03 /* Sources */,
+				09C79DB4C3DEABC984DF93429B17C166 /* Sources */,
 				90C0A689D7F2721971E86D668128255B /* Frameworks */,
 				21BAB1C9B4B05F60A0D0C01A2F971BE1 /* Headers */,
 			);
@@ -333,16 +333,16 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		04D174E558D961BE8889EEB23C775C03 /* Sources */ = {
+		09C79DB4C3DEABC984DF93429B17C166 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02AF2BC6C873084E6A80A7E4C6E8EF07 /* BaseLayout.swift in Sources */,
-				5A5A1786676FA5BB11D4DB1956FBE0E6 /* BaseLayoutAttributes.swift in Sources */,
-				A639FB8A03FC8EE1BEA9F5E8621258D5 /* DisplaySwitcher-dummy.m in Sources */,
-				017A521D0BA7A4B151ABAEBD3DE7B8FA /* RotationButton.swift in Sources */,
-				533DE0146817D10A4AEA8EC43854BD4B /* TransitionLayout.swift in Sources */,
-				CAECE181C8DB31F1ADC8123AB9DC7B14 /* TransitionManager.swift in Sources */,
+				F881232C5947B1E5141BA816477BBF31 /* BaseLayoutAttributes.swift in Sources */,
+				A88DE9AF1F74FA9FF76DD56FF6EA20CD /* DisplaySwitcher-dummy.m in Sources */,
+				6FF2C672EFB0295443056753C48DE9F5 /* DisplaySwitchLayout.swift in Sources */,
+				C412F978ADD68E054C1C11DDD4A17D01 /* RotationButton.swift in Sources */,
+				4912E9AB32737F543934190FE6CF9D2C /* TransitionLayout.swift in Sources */,
+				33995EB47EF90F6514BFCE9D3852FBB9 /* TransitionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,8 +591,8 @@
 		39D8F5DA7BE2B5F1F3BF9E12C8D0C251 /* Build configuration list for PBXNativeTarget "DisplaySwitcher" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0B3F75A44C4B096E9B306B6AB2904274 /* Debug */,
-				25DC9CE809BEE98E9A601BF53B4C8AE2 /* Release */,
+				FA259D48692A05A1EE5BD541CE704EEF /* Debug */,
+				EA03F1AEAEB1EF85E6681FC206AE994D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -600,8 +600,8 @@
 		AE6FA5ED06DCE5D3D2955E95C5D0204B /* Build configuration list for PBXNativeTarget "Pods-DisplaySwitcher_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9BC7C14B3FF41D5935D0830C2F9A6BFD /* Debug */,
-				7240B9D0DF8B09ADF76C8A57EF985E1E /* Release */,
+				4F94388689CB37A7E3FDCDBA0DE8634F /* Debug */,
+				231AC283D94AC3B78546D040E5BD338D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

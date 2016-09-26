@@ -15,12 +15,12 @@ open class TransitionManager {
     fileprivate let duration: TimeInterval
     fileprivate let collectionView: UICollectionView
     fileprivate let destinationLayout: UICollectionViewLayout
-    fileprivate let layoutState: CollectionViewLayoutState
+    fileprivate let layoutState: LayoutState
     fileprivate var transitionLayout: TransitionLayout!
     fileprivate var updater: CADisplayLink!
     fileprivate var startTime: TimeInterval!
     
-    public init(duration: TimeInterval, collectionView: UICollectionView, destinationLayout: UICollectionViewLayout, layoutState: CollectionViewLayoutState) {
+    public init(duration: TimeInterval, collectionView: UICollectionView, destinationLayout: UICollectionViewLayout, layoutState: LayoutState) {
         self.collectionView = collectionView
         self.destinationLayout = destinationLayout
         self.layoutState = layoutState

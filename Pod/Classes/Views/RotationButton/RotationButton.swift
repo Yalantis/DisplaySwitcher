@@ -17,7 +17,7 @@ private let listLineWidth: CGFloat = 2.0
 private let stepHeightDelta: CGFloat = 0.3
 private let itemsCount: Int = 6
 
-open class RotationButton: UIButton {
+open class SwitchLayoutButton: UIButton {
     
     open var animationDuration: TimeInterval = 0.25
     
@@ -55,7 +55,7 @@ open class RotationButton: UIButton {
     
 }
 
-fileprivate extension RotationButton {
+fileprivate extension SwitchLayoutButton {
 
     func animateRotation() {
         UIView.animate(withDuration: animationDuration) {

@@ -12,7 +12,7 @@ open class BaseLayoutAttributes: UICollectionViewLayoutAttributes {
     
     open var transitionProgress: CGFloat = 0.0
     open var nextLayoutCellFrame: CGRect = .zero
-    open var layoutState: CollectionViewLayoutState = .list
+    open var layoutState: LayoutState = .list
     
     override open func copy(with zone: NSZone?) -> Any {
         let copy = super.copy(with: zone) as! BaseLayoutAttributes

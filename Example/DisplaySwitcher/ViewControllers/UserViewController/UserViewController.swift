@@ -18,15 +18,15 @@ class UserViewController: UIViewController {
     
     @IBOutlet fileprivate weak var collectionView: UICollectionView!
     @IBOutlet fileprivate weak var searchBar: UISearchBar!
-    @IBOutlet fileprivate weak var rotationButton: RotationButton!
+    @IBOutlet fileprivate weak var rotationButton: SwitchLayoutButton!
     
     fileprivate var tap: UITapGestureRecognizer!
     fileprivate var users = UserDataProvider().generateFakeUsers()
     fileprivate var searchUsers = [User]()
     fileprivate var isTransitionAvailable = true
-    fileprivate lazy var listLayout = BaseLayout(staticCellHeight: listLayoutStaticCellHeight, nextLayoutStaticCellHeight: gridLayoutStaticCellHeight, layoutState: .list)
-    fileprivate lazy var gridLayout = BaseLayout(staticCellHeight: gridLayoutStaticCellHeight, nextLayoutStaticCellHeight: listLayoutStaticCellHeight, layoutState: .grid)
-    fileprivate var layoutState: CollectionViewLayoutState = .list
+    fileprivate lazy var listLayout = DisplaySwitchLayout(staticCellHeight: listLayoutStaticCellHeight, nextLayoutStaticCellHeight: gridLayoutStaticCellHeight, layoutState: .list)
+    fileprivate lazy var gridLayout = DisplaySwitchLayout(staticCellHeight: gridLayoutStaticCellHeight, nextLayoutStaticCellHeight: listLayoutStaticCellHeight, layoutState: .grid)
+    fileprivate var layoutState: LayoutState = .list
     
     // MARK: - Lifecycle
     override func viewDidLoad() {

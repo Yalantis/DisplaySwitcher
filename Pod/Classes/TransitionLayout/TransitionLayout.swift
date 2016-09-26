@@ -10,9 +10,8 @@ import UIKit
 
 open class TransitionLayout: UICollectionViewTransitionLayout {
     
-    var layoutState: CollectionViewLayoutState?
+    var layoutState: LayoutState?
     
-    // MARK: - UICollectionViewLayout
     override open func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
         let currentAttributes = super.layoutAttributesForElements(in: rect)!
         setupNextLayout(with: currentAttributes, in: rect)

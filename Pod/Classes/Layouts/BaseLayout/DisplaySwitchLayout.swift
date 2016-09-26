@@ -1,5 +1,5 @@
 //
-//  BaseLayout.swift
+//  DisplaySwitchLayout.swift
 //  YALLayoutTransitioning
 //
 //  Created by Roman on 29.02.16.
@@ -8,23 +8,23 @@
 
 import UIKit
 
-private let listLayoutCountOfColumns = 1
-private let gridLayoutCountOfColumns = 3
+private let ListLayoutCountOfColumns = 1
+private let GridLayoutCountOfColumns = 3
 
-public enum CollectionViewLayoutState {
+public enum LayoutState {
     
     case list, grid
 
 }
 
-open class BaseLayout: UICollectionViewLayout {
+open class DisplaySwitchLayout: UICollectionViewLayout {
     
     fileprivate let numberOfColumns: Int
     fileprivate let cellPadding: CGFloat = 6.0
     fileprivate let staticCellHeight: CGFloat
     fileprivate let nextLayoutStaticCellHeight: CGFloat
     fileprivate var previousContentOffset: NSValue?
-    fileprivate var layoutState: CollectionViewLayoutState
+    fileprivate var layoutState: LayoutState
   
     fileprivate var baseLayoutAttributes: [BaseLayoutAttributes]!
     
@@ -36,9 +36,9 @@ open class BaseLayout: UICollectionViewLayout {
     
     // MARK: - Lifecycle
   
-    public init(staticCellHeight: CGFloat, nextLayoutStaticCellHeight: CGFloat, layoutState: CollectionViewLayoutState) {
+    public init(staticCellHeight: CGFloat, nextLayoutStaticCellHeight: CGFloat, layoutState: LayoutState) {
         self.staticCellHeight = staticCellHeight
-        self.numberOfColumns = layoutState == .list ? listLayoutCountOfColumns : gridLayoutCountOfColumns
+        self.numberOfColumns = layoutState == .list ? ListLayoutCountOfColumns : GridLayoutCountOfColumns
         self.layoutState = layoutState
         self.nextLayoutStaticCellHeight = nextLayoutStaticCellHeight
         
@@ -105,7 +105,7 @@ open class BaseLayout: UICollectionViewLayout {
             if previousContentOffsetPoint.y == 0 {
                 return previousContentOffsetPoint
             }
-            if layoutState == CollectionViewLayoutState.list {
+            if layoutState == LayoutState.list {
                 let offsetY = ceil(previousContentOffsetPoint.y + (staticCellHeight * previousContentOffsetPoint.y / nextLayoutStaticCellHeight) + cellPadding)
                 return CGPoint(x: superContentOffset.x, y: offsetY)
             } else {
