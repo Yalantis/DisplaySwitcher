@@ -1,5 +1,5 @@
 //
-//  RotationButton.swift
+//  SwitchLayoutButton.swift
 //  YALLayoutTransitioning
 //
 //  Created by Roman on 02.03.16.
@@ -101,7 +101,7 @@ fileprivate extension SwitchLayoutButton {
             } else {
                 offsetX = bounds.width
             }
-            var path = UIBezierPath()
+            let path = UIBezierPath()
             path.move(to: CGPoint(x: offsetX, y: bounds.height * heightDelta))
             path.addLine(to: CGPoint(x: bounds.width / 2, y: bounds.height * heightDelta))
             lineLayer.path = path.cgPath
