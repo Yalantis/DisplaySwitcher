@@ -68,7 +68,7 @@ class UserCollectionViewCell: UICollectionViewCell, CellInterface {
     
     override func apply(_ layoutAttributes: UICollectionViewLayoutAttributes) {
         super.apply(layoutAttributes)
-        if let attributes = layoutAttributes as? BaseLayoutAttributes {
+        if let attributes = layoutAttributes as? DisplaySwitchLayoutAttributes {
             if attributes.transitionProgress > 0 {
                 if attributes.layoutState == .grid {
                     setupGridLayoutConstraints(attributes.transitionProgress, cellWidth: attributes.nextLayoutCellFrame.width)

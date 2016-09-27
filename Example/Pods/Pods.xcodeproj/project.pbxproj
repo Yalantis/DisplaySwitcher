@@ -8,16 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		02AC55A7E1E8529332616D9A460C0986 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		33995EB47EF90F6514BFCE9D3852FBB9 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC79D6AA268F150E72B845DF4ED6A34 /* TransitionManager.swift */; };
-		4912E9AB32737F543934190FE6CF9D2C /* TransitionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F36F4B1A3FEAAA2B3F3A41AC36E5B2B /* TransitionLayout.swift */; };
+		1138469247F329617F7DFEED06E26FC2 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012A9E05E920036E57190878B7E663B9 /* TransitionManager.swift */; };
+		2DF3302442E5DB5AD7550DC61D46C34A /* DisplaySwitcher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3D7D530D5F87952C7779E5872038E5 /* DisplaySwitcher-dummy.m */; };
 		5FC156D9B1229FCE8E3A67F6FEED2CEE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		6C58204AA0FEBB8ACACED6AC9751A9CF /* DisplaySwitcher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 928063B48F506E2DFCFCEEA67C5857C0 /* DisplaySwitcher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6FF2C672EFB0295443056753C48DE9F5 /* DisplaySwitchLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DE8A58C2091E146225966D4110CA91 /* DisplaySwitchLayout.swift */; };
+		757A7B57ECD6E9F818162A1A27B9CCA0 /* DisplaySwitchLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A37A7EBC7071B03409B0895B41067C /* DisplaySwitchLayoutAttributes.swift */; };
+		763870E08ECF0DF98E6BDBB26FF5EB43 /* TransitionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ACFA397904D2518DAB8BC2837075DD /* TransitionLayout.swift */; };
+		79FAAE4BAC936C94A99B8A585F0D13FD /* SwitchLayoutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732C6B6DA13ED1863B6648609C534FB5 /* SwitchLayoutButton.swift */; };
 		9268E036B952F02B79AB7057AAA1961F /* Pods-DisplaySwitcher_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 830D1C416D36AB6729FBFC37832A24EF /* Pods-DisplaySwitcher_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A88DE9AF1F74FA9FF76DD56FF6EA20CD /* DisplaySwitcher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E3D7D530D5F87952C7779E5872038E5 /* DisplaySwitcher-dummy.m */; };
 		AAD996E961F0CB8FECEF0C5FFA67442F /* Pods-DisplaySwitcher_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8C4AC894AB9E2804442C1AAA2CC42D /* Pods-DisplaySwitcher_Example-dummy.m */; };
-		C593072E1D99596300E8B80B /* SwitchLayoutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C593072D1D99596300E8B80B /* SwitchLayoutButton.swift */; };
-		F881232C5947B1E5141BA816477BBF31 /* BaseLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9952EB7E22635CB94DFC6EEAA1F9E679 /* BaseLayoutAttributes.swift */; };
+		CAB58DEF2A61C3FDFB80DC6912C9A33B /* DisplaySwitchLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5651DDA3DE8E2F2786EAF5EA5780FA56 /* DisplaySwitchLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,28 +31,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		012A9E05E920036E57190878B7E663B9 /* TransitionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
 		1170F0A8956A13D2ED245C3D98A9CB79 /* DisplaySwitcher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DisplaySwitcher.xcconfig; sourceTree = "<group>"; };
 		1A88F8E53E5584B9C93C35EEF0C866D6 /* Pods-DisplaySwitcher_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DisplaySwitcher_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4070947A3342573C2AA1BBCD08464C72 /* Pods-DisplaySwitcher_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DisplaySwitcher_Example-frameworks.sh"; sourceTree = "<group>"; };
 		4E758E234FECC25CF2FBFFCC738D54D2 /* Pods_DisplaySwitcher_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DisplaySwitcher_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4F36F4B1A3FEAAA2B3F3A41AC36E5B2B /* TransitionLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TransitionLayout.swift; sourceTree = "<group>"; };
 		536F281CE82EE5E3DBE9B074EAB62513 /* Pods-DisplaySwitcher_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DisplaySwitcher_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		53ACFA397904D2518DAB8BC2837075DD /* TransitionLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TransitionLayout.swift; sourceTree = "<group>"; };
+		5651DDA3DE8E2F2786EAF5EA5780FA56 /* DisplaySwitchLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DisplaySwitchLayout.swift; sourceTree = "<group>"; };
 		5B949A70DD1B9E1B437BE3675C13D461 /* Pods-DisplaySwitcher_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DisplaySwitcher_Example.modulemap"; sourceTree = "<group>"; };
 		70F75354FF8AF6D60142D82D3265A688 /* DisplaySwitcher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DisplaySwitcher.modulemap; sourceTree = "<group>"; };
+		732C6B6DA13ED1863B6648609C534FB5 /* SwitchLayoutButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwitchLayoutButton.swift; sourceTree = "<group>"; };
 		7E3D7D530D5F87952C7779E5872038E5 /* DisplaySwitcher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DisplaySwitcher-dummy.m"; sourceTree = "<group>"; };
 		830D1C416D36AB6729FBFC37832A24EF /* Pods-DisplaySwitcher_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DisplaySwitcher_Example-umbrella.h"; sourceTree = "<group>"; };
 		8CE6789414BDDE48252F2B922FE8C58A /* Pods-DisplaySwitcher_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DisplaySwitcher_Example-resources.sh"; sourceTree = "<group>"; };
 		928063B48F506E2DFCFCEEA67C5857C0 /* DisplaySwitcher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DisplaySwitcher-umbrella.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9952EB7E22635CB94DFC6EEAA1F9E679 /* BaseLayoutAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BaseLayoutAttributes.swift; sourceTree = "<group>"; };
 		9D562BA50DC01A53789957BEA77D5157 /* DisplaySwitcher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DisplaySwitcher-prefix.pch"; sourceTree = "<group>"; };
 		A97006B8EB56F4301383873A6FFD8F25 /* DisplaySwitcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DisplaySwitcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3DE8A58C2091E146225966D4110CA91 /* DisplaySwitchLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DisplaySwitchLayout.swift; sourceTree = "<group>"; };
-		C593072D1D99596300E8B80B /* SwitchLayoutButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchLayoutButton.swift; sourceTree = "<group>"; };
+		B4A37A7EBC7071B03409B0895B41067C /* DisplaySwitchLayoutAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DisplaySwitchLayoutAttributes.swift; sourceTree = "<group>"; };
 		CD8C4AC894AB9E2804442C1AAA2CC42D /* Pods-DisplaySwitcher_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DisplaySwitcher_Example-dummy.m"; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CF11501A944DC601031B5971DADE6E33 /* Pods-DisplaySwitcher_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DisplaySwitcher_Example.release.xcconfig"; sourceTree = "<group>"; };
-		DBC79D6AA268F150E72B845DF4ED6A34 /* TransitionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
 		E4C801C1EEBA47FBC85AA5AAB1EC7E20 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E84FB7850D7BA11C3D17BA58EA7FF598 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF46B4785A548553283ECF72C82F0C99 /* Pods-DisplaySwitcher_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DisplaySwitcher_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -81,17 +81,9 @@
 		1544A918BEC8168E023B049A8DF627A8 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				A831990F8178220C498E2A5E2C0000E3 /* Classes */,
+				B6E079A3D8ABFB980875B0F9259326AF /* Classes */,
 			);
 			path = Pod;
-			sourceTree = "<group>";
-		};
-		1F4DE42F6DE81C8EB154A2FF507A11B0 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				C593072D1D99596300E8B80B /* SwitchLayoutButton.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		237A742DE67B79872F59A8A7D566FDC4 /* DisplaySwitcher */ = {
@@ -110,6 +102,14 @@
 				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		582D37F8B608ADB88DB784C48520D411 /* TransitionLayout */ = {
+			isa = PBXGroup;
+			children = (
+				53ACFA397904D2518DAB8BC2837075DD /* TransitionLayout.swift */,
+			);
+			path = TransitionLayout;
 			sourceTree = "<group>";
 		};
 		5A6EECF91DF19E46F5313FEC2F14106D /* Development Pods */ = {
@@ -149,22 +149,6 @@
 			);
 			sourceTree = "<group>";
 		};
-		847D36CA8C72CF6BA83F0C86AB53E968 /* TransitionManager */ = {
-			isa = PBXGroup;
-			children = (
-				DBC79D6AA268F150E72B845DF4ED6A34 /* TransitionManager.swift */,
-			);
-			path = TransitionManager;
-			sourceTree = "<group>";
-		};
-		84CA9ABDECB0DF7A464FD2F7BAD564D6 /* Layouts */ = {
-			isa = PBXGroup;
-			children = (
-				CB20FE00CBAEB92DBF271E0EE55861D6 /* BaseLayout */,
-			);
-			path = Layouts;
-			sourceTree = "<group>";
-		};
 		A141AEFC44293189111352B614440D1B /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,13 +158,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A831990F8178220C498E2A5E2C0000E3 /* Classes */ = {
+		B6E079A3D8ABFB980875B0F9259326AF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				84CA9ABDECB0DF7A464FD2F7BAD564D6 /* Layouts */,
-				E4D6559985EF5986095C455A8A138EFC /* TransitionLayout */,
-				847D36CA8C72CF6BA83F0C86AB53E968 /* TransitionManager */,
-				1F4DE42F6DE81C8EB154A2FF507A11B0 /* Views */,
+				F812EEC177A81001E3212BCCE9F50E99 /* Layouts */,
+				582D37F8B608ADB88DB784C48520D411 /* TransitionLayout */,
+				C5938C031B9984252C4D57D5C779EB3F /* TransitionManager */,
+				EEA71B000390F6F68EA934A690FF6570 /* Views */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -193,13 +177,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CB20FE00CBAEB92DBF271E0EE55861D6 /* BaseLayout */ = {
+		C5938C031B9984252C4D57D5C779EB3F /* TransitionManager */ = {
 			isa = PBXGroup;
 			children = (
-				9952EB7E22635CB94DFC6EEAA1F9E679 /* BaseLayoutAttributes.swift */,
-				B3DE8A58C2091E146225966D4110CA91 /* DisplaySwitchLayout.swift */,
+				012A9E05E920036E57190878B7E663B9 /* TransitionManager.swift */,
 			);
-			path = BaseLayout;
+			path = TransitionManager;
 			sourceTree = "<group>";
 		};
 		D500F4569E42782756CFB3AFA5C62C64 /* Support Files */ = {
@@ -216,12 +199,12 @@
 			path = "Example/Pods/Target Support Files/DisplaySwitcher";
 			sourceTree = "<group>";
 		};
-		E4D6559985EF5986095C455A8A138EFC /* TransitionLayout */ = {
+		EEA71B000390F6F68EA934A690FF6570 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				4F36F4B1A3FEAAA2B3F3A41AC36E5B2B /* TransitionLayout.swift */,
+				732C6B6DA13ED1863B6648609C534FB5 /* SwitchLayoutButton.swift */,
 			);
-			path = TransitionLayout;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		EFDFD9E84C6F9581C4423DF0603784C7 /* Targets Support Files */ = {
@@ -230,6 +213,15 @@
 				797118EBD54C0C39BFCCB230A39E87A1 /* Pods-DisplaySwitcher_Example */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F812EEC177A81001E3212BCCE9F50E99 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				B4A37A7EBC7071B03409B0895B41067C /* DisplaySwitchLayoutAttributes.swift */,
+				5651DDA3DE8E2F2786EAF5EA5780FA56 /* DisplaySwitchLayout.swift */,
+			);
+			path = Layouts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,7 +268,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 39D8F5DA7BE2B5F1F3BF9E12C8D0C251 /* Build configuration list for PBXNativeTarget "DisplaySwitcher" */;
 			buildPhases = (
-				09C79DB4C3DEABC984DF93429B17C166 /* Sources */,
+				C88BBCC709B8957DE40B54DF8D4E708A /* Sources */,
 				90C0A689D7F2721971E86D668128255B /* Frameworks */,
 				21BAB1C9B4B05F60A0D0C01A2F971BE1 /* Headers */,
 			);
@@ -317,24 +309,24 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		09C79DB4C3DEABC984DF93429B17C166 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F881232C5947B1E5141BA816477BBF31 /* BaseLayoutAttributes.swift in Sources */,
-				A88DE9AF1F74FA9FF76DD56FF6EA20CD /* DisplaySwitcher-dummy.m in Sources */,
-				6FF2C672EFB0295443056753C48DE9F5 /* DisplaySwitchLayout.swift in Sources */,
-				C593072E1D99596300E8B80B /* SwitchLayoutButton.swift in Sources */,
-				4912E9AB32737F543934190FE6CF9D2C /* TransitionLayout.swift in Sources */,
-				33995EB47EF90F6514BFCE9D3852FBB9 /* TransitionManager.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9C4B8C6590EF3E4B44350734F63F8D23 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AAD996E961F0CB8FECEF0C5FFA67442F /* Pods-DisplaySwitcher_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C88BBCC709B8957DE40B54DF8D4E708A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				757A7B57ECD6E9F818162A1A27B9CCA0 /* DisplaySwitchLayoutAttributes.swift in Sources */,
+				2DF3302442E5DB5AD7550DC61D46C34A /* DisplaySwitcher-dummy.m in Sources */,
+				CAB58DEF2A61C3FDFB80DC6912C9A33B /* DisplaySwitchLayout.swift in Sources */,
+				79FAAE4BAC936C94A99B8A585F0D13FD /* SwitchLayoutButton.swift in Sources */,
+				763870E08ECF0DF98E6BDBB26FF5EB43 /* TransitionLayout.swift in Sources */,
+				1138469247F329617F7DFEED06E26FC2 /* TransitionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

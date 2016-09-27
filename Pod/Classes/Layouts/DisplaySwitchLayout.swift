@@ -26,7 +26,7 @@ open class DisplaySwitchLayout: UICollectionViewLayout {
     fileprivate var previousContentOffset: NSValue?
     fileprivate var layoutState: LayoutState
   
-    fileprivate var baseLayoutAttributes: [BaseLayoutAttributes]!
+    fileprivate var baseLayoutAttributes: [DisplaySwitchLayoutAttributes]!
     
     fileprivate var contentHeight: CGFloat = 0.0
     fileprivate var contentWidth: CGFloat {
@@ -54,7 +54,7 @@ open class DisplaySwitchLayout: UICollectionViewLayout {
     override open func prepare() {
         super.prepare()
         
-        baseLayoutAttributes = [BaseLayoutAttributes]()
+        baseLayoutAttributes = [DisplaySwitchLayoutAttributes]()
         
         // cells layout
         contentHeight = 0
@@ -70,7 +70,7 @@ open class DisplaySwitchLayout: UICollectionViewLayout {
             let height = cellPadding + staticCellHeight
             let frame = CGRect(x: xOffsets[column], y: yOffset[column], width: columnWidth, height: height)
             let insetFrame = frame.insetBy(dx: cellPadding, dy: cellPadding)
-            let attributes = BaseLayoutAttributes(forCellWith: indexPath)
+            let attributes = DisplaySwitchLayoutAttributes(forCellWith: indexPath)
             attributes.frame = insetFrame
             baseLayoutAttributes.append(attributes)
             contentHeight = max(contentHeight, frame.maxY)
@@ -94,7 +94,7 @@ open class DisplaySwitchLayout: UICollectionViewLayout {
     }
     
     override open class var layoutAttributesClass: AnyClass {
-        return BaseLayoutAttributes.self
+        return DisplaySwitchLayoutAttributes.self
     }
     
     // Fix bug with content offset
