@@ -1,5 +1,5 @@
 //
-//  RotationButton.swift
+//  SwitchLayoutButton.swift
 //  YALLayoutTransitioning
 //
 //  Created by Roman on 02.03.16.
@@ -15,39 +15,37 @@ private let gridLineWidth: CGFloat = 4.0
 private let listLineWidth: CGFloat = 2.0
 
 private let stepHeightDelta: CGFloat = 0.3
-
 private let itemsCount: Int = 6
 
-public class RotationButton: UIButton {
+open class SwitchLayoutButton: UIButton {
     
-    @IBInspectable var lineColor: UIColor = .greenColor()
+    open var animationDuration: TimeInterval = 0.25
     
-    private let lineLayer1 = CAShapeLayer()
-    private let lineLayer2 = CAShapeLayer()
-    private let lineLayer3 = CAShapeLayer()
-    private let lineLayer4 = CAShapeLayer()
-    private let lineLayer5 = CAShapeLayer()
-    private let lineLayer6 = CAShapeLayer()
+    @IBInspectable open var lineColor: UIColor = .green
     
-    private let lineLayers: [CAShapeLayer] = {
+    fileprivate let lineLayer1 = CAShapeLayer()
+    fileprivate let lineLayer2 = CAShapeLayer()
+    fileprivate let lineLayer3 = CAShapeLayer()
+    fileprivate let lineLayer4 = CAShapeLayer()
+    fileprivate let lineLayer5 = CAShapeLayer()
+    fileprivate let lineLayer6 = CAShapeLayer()
+    
+    fileprivate let lineLayers: [CAShapeLayer] = {
         var lineLayers = [CAShapeLayer]()
         for index in 0..<itemsCount {
-            let lineLayer = CAShapeLayer()
-            lineLayers.append(lineLayer)
+            lineLayers.append(CAShapeLayer())
         }
         
         return lineLayers
     }()
     
-    public var animationDuration: NSTimeInterval = 0.25 //default value
-    
-    override public var selected: Bool {
+    override open var isSelected: Bool {
         didSet {
             animateRotation()
         }
     }
     
-    override public func awakeFromNib() {
+    override open func awakeFromNib() {
         super.awakeFromNib()
         for index in 0..<itemsCount {
             layer.addSublayer(lineLayers[index])
@@ -55,17 +53,21 @@ public class RotationButton: UIButton {
         drawLine()
     }
     
+}
+
+fileprivate extension SwitchLayoutButton {
+
     func animateRotation() {
-        UIView.animateWithDuration(animationDuration) {
-            if self.selected {
-                self.transform = CGAffineTransformMakeRotation(CGFloat(-M_PI_2))
+        UIView.animate(withDuration: animationDuration) {
+            if self.isSelected {
+                self.transform = CGAffineTransform(rotationAngle: CGFloat(-M_PI_2))
                 for index in 0..<itemsCount {
                     let lineLayer = self.lineLayers[index]
                     lineLayer.strokeEnd = gridStrokeEnd
                     lineLayer.lineWidth = gridLineWidth
                 }
             } else {
-                self.transform = CGAffineTransformIdentity
+                self.transform = CGAffineTransform.identity
                for index in 0..<itemsCount {
                     let lineLayer = self.lineLayers[index]
                     lineLayer.strokeEnd = listStrokeEnd
@@ -81,14 +83,13 @@ public class RotationButton: UIButton {
             
             for index in 0..<itemsCount {
                 let lineLayer = self.lineLayers[index]
-                lineLayer.addAnimation(strokeEndAnimation, forKey: nil)
-                lineLayer.addAnimation(lineWidthAnimation, forKey: nil)
+                lineLayer.add(strokeEndAnimation, forKey: nil)
+                lineLayer.add(lineWidthAnimation, forKey: nil)
             }
         }
     }
     
     func drawLine() {
-        var path = UIBezierPath()
         var heightDelta: CGFloat = 0.2
         for index in 0..<itemsCount {
             let lineLayer = lineLayers[index]
@@ -100,11 +101,11 @@ public class RotationButton: UIButton {
             } else {
                 offsetX = bounds.width
             }
-            path = UIBezierPath()
-            path.moveToPoint(CGPointMake(offsetX, bounds.height * heightDelta))
-            path.addLineToPoint(CGPointMake(bounds.width / 2, bounds.height * heightDelta))
-            lineLayer.path = path.CGPath
-            lineLayer.strokeColor = lineColor.CGColor
+            let path = UIBezierPath()
+            path.move(to: CGPoint(x: offsetX, y: bounds.height * heightDelta))
+            path.addLine(to: CGPoint(x: bounds.width / 2, y: bounds.height * heightDelta))
+            lineLayer.path = path.cgPath
+            lineLayer.strokeColor = lineColor.cgColor
             lineLayer.lineWidth = listLineWidth
         }
     }
