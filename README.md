@@ -1,7 +1,6 @@
 # Display Switcher
 
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/DisplaySwitcher.svg)](https://img.shields.io/cocoapods/v/DisplaySwitcher.svg)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![Platform](http://img.shields.io/badge/platform-iOS-blue.svg?style=flat)](http://cocoapods.org/?q=YALSideMenu) 
 [![License](http://img.shields.io/badge/license-MIT-green.svg?style=flat)]() 
 [![Yalantis](https://raw.githubusercontent.com/Yalantis/PullToRefresh/develop/PullToRefreshDemo/Resources/badge_dark.png)](https://yalantis.com/?utm_source=github)
@@ -24,12 +23,6 @@ Also, read how it was done in [our blog](https://yalantis.com/blog/contact-displ
 ```ruby
 use_frameworks!
 pod ‘DisplaySwitcher’, '~> 1.0’
-```
-
-##Installing with [Carthage](https://github.com/Carthage/Carthage)
-
-```ruby
-github "Yalantis/DisplaySwitcher" ~> 1.0
 ```
 
 ##Usage
