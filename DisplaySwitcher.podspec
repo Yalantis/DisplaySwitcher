@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
     s.name             = "DisplaySwitcher"
-    s.version          = "1.0"
+    s.version          = "1.0.1"
     s.summary          = "This component implements custom transition between two collection view layouts."
     s.screenshot       = 'https://d13yacurqjgara.cloudfront.net/users/116693/screenshots/2276068/open-uri20151005-3-walc59'
 
@@ -9,8 +9,7 @@ Pod::Spec.new do |s|
     s.license          = { :type => "MIT", :file => "LICENSE" }
     s.author           = "Yalantis"
     s.social_media_url = "https://twitter.com/yalantis"
-
-    s.platform         = :ios, '8.0'
+    
     s.ios.deployment_target = '8.0'
 
     s.source           = { :git => "https://github.com/Yalantis/DisplaySwitcher.git", :tag => s.version }
