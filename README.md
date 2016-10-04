@@ -18,11 +18,19 @@ Also, read how it was done in [our blog](https://yalantis.com/blog/contact-displ
 - Xcode 8
 - Swift 3
 
-##Installing with [CocoaPods](https://cocoapods.org)
+## Installing 
+
+### [CocoaPods](https://cocoapods.org)
 
 ```ruby
 use_frameworks!
 pod ‘DisplaySwitcher’, '~> 1.0’
+```
+
+### [Carthage](https://github.com/Carthage/Carthage)
+
+```
+github "Yalantis/DisplaySwitcher" ~> 1.0
 ```
 
 ##Usage
