@@ -44,15 +44,15 @@ import DisplaySwitcher
 Then create two layouts (list mode and grid mode):
 
 ```swift
-private lazy var listLayout = BaseLayout(staticCellHeight: listLayoutStaticCellHeight, nextLayoutStaticCellHeight: gridLayoutStaticCellHeight, layoutState: .ListLayoutState)
+private lazy var listLayout = DisplaySwitchLayout(staticCellHeight: listLayoutStaticCellHeight, nextLayoutStaticCellHeight: gridLayoutStaticCellHeight, layoutState: .list)
 
-private lazy var gridLayout = BaseLayout(staticCellHeight: gridLayoutStaticCellHeight, nextLayoutStaticCellHeight: listLayoutStaticCellHeight, layoutState: .GridLayoutState)
+private lazy var gridLayout = DisplaySwitchLayout(staticCellHeight: gridLayoutStaticCellHeight, nextLayoutStaticCellHeight: listLayoutStaticCellHeight, layoutState: .grid)
 ```
 
 Set current layout:
 
 ```swift
-private var layoutState: CollectionViewLayoutState = .ListLayoutState
+private var layoutState: LayoutState = .list
 collectionView.collectionViewLayout = listLayout
 ```
 
@@ -81,15 +81,15 @@ And in the end necessary create transition and start it (you can simply change a
 
 ```swift
 let transitionManager: TransitionManager
-if layoutState == .ListLayoutState {
-    layoutState = .GridLayoutState
+if layoutState == .list {
+    layoutState = .grid
     transitionManager = TransitionManager(duration: animationDuration, collectionView: collectionView!, destinationLayout: gridLayout, layoutState: layoutState)
 } else {
-    layoutState = .ListLayoutState
+    layoutState = .list
     transitionManager = TransitionManager(duration: animationDuration, collectionView: collectionView!, destinationLayout: listLayout, layoutState: layoutState)
 }
 transitionManager.startInteractiveTransition()
-rotationButton.selected = layoutState == .ListLayoutState
+rotationButton.selected = layoutState == .list
 rotationButton.animationDuration = animationDuration
 ```
 
