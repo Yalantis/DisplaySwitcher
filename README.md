@@ -13,7 +13,7 @@ Check this <a href="https://dribbble.com/shots/2276068-Contact-Display-Switch">p
 
 Also, read how it was done in [our blog](https://yalantis.com/blog/contact-display-switch-animation/)
 
-##Requirements
+## Requirements
 - iOS 8.0+
 - Xcode 8
 - Swift 3
@@ -33,7 +33,7 @@ pod ‘DisplaySwitcher’, '~> 1.0’
 github "Yalantis/DisplaySwitcher" ~> 1.0
 ```
 
-##Usage
+## Usage
 
 At first, import DisplaySwitcher:
 
