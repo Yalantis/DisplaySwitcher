@@ -60,7 +60,7 @@ fileprivate extension SwitchLayoutButton {
     func animateRotation() {
         UIView.animate(withDuration: animationDuration) {
             if self.isSelected {
-                self.transform = CGAffineTransform(rotationAngle: CGFloat(-M_PI_2))
+                self.transform = CGAffineTransform(rotationAngle: CGFloat(-Double.pi / 2))
                 for index in 0..<itemsCount {
                     let lineLayer = self.lineLayers[index]
                     lineLayer.strokeEnd = gridStrokeEnd
