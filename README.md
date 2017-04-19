@@ -30,7 +30,7 @@ pod ‘DisplaySwitcher’, '~> 1.0’
 ### [Carthage](https://github.com/Carthage/Carthage)
 
 ```
-github "Yalantis/DisplaySwitcher" ~> 1.0
+github "Yalantis/DisplaySwitcher" "master"
 ```
 
 ## Usage
