@@ -10,7 +10,7 @@ import UIKit
 
 private let finishTransitionValue = 1.0
 
-open class TransitionManager {
+@objc open class TransitionManager: NSObject {
     
     fileprivate let duration: TimeInterval
     fileprivate let collectionView: UICollectionView
@@ -34,7 +34,7 @@ open class TransitionManager {
                 self.collectionView.reloadData()
                 UIApplication.shared.endIgnoringInteractionEvents()
             }
-        } as! TransitionLayout
+            } as! TransitionLayout
         transitionLayout.layoutState = layoutState
         createUpdaterAndStart()
     }
@@ -50,7 +50,7 @@ fileprivate extension TransitionManager {
         updater.add(to: RunLoop.current, forMode: .commonModes)
     }
     
-    dynamic func updateTransitionProgress() {
+    @objc func updateTransitionProgress() {
         var progress = (updater.timestamp - startTime) / duration
         progress = min(1, progress)
         progress = max(0, progress)
