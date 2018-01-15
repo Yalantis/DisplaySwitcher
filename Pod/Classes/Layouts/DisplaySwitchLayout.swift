@@ -98,9 +98,9 @@ open class DisplaySwitchLayout: UICollectionViewLayout {
     }
     
     // Fix bug with content offset
-    override open func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint) -> CGPoint {
+    override open func targetContentOffset(forProposedContentOffset proposedContentOffset: CGPoint, withScrollingVelocity velocity: CGPoint) -> CGPoint {
         let previousContentOffsetPoint = previousContentOffset?.cgPointValue
-        let superContentOffset = super.targetContentOffset(forProposedContentOffset: proposedContentOffset)
+        let superContentOffset = super.targetContentOffset(forProposedContentOffset: proposedContentOffset, withScrollingVelocity: velocity)
         if let previousContentOffsetPoint = previousContentOffsetPoint {
             if previousContentOffsetPoint.y == 0 {
                 return previousContentOffsetPoint
