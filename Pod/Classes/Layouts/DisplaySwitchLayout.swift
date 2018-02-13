@@ -38,12 +38,12 @@ open class DisplaySwitchLayout: UICollectionViewLayout {
   
     public init(staticCellHeight: CGFloat, nextLayoutStaticCellHeight: CGFloat, layoutState: LayoutState, cellHeightPadding: CGFloat = 6, cellWidthPadding: CGFloat = 6, gridLayoutCountOfColumns: Int = 3) {
         self.staticCellHeight = staticCellHeight
+        self.gridLayoutCountOfColumns = gridLayoutCountOfColumns
         self.numberOfColumns = layoutState == .list ? listLayoutCountOfColumns : gridLayoutCountOfColumns
         self.layoutState = layoutState
         self.nextLayoutStaticCellHeight = nextLayoutStaticCellHeight
         self.cellHeightPadding = cellHeightPadding
         self.cellWidthPadding = cellWidthPadding
-        self.gridLayoutCountOfColumns = gridLayoutCountOfColumns
         
         super.init()
     }
