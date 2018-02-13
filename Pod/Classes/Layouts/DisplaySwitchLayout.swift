@@ -8,9 +8,6 @@
 
 import UIKit
 
-private let ListLayoutCountOfColumns = 1
-private let GridLayoutCountOfColumns = 3
-
 @objc public enum LayoutState: Int {
     
     case list, grid
@@ -20,11 +17,14 @@ private let GridLayoutCountOfColumns = 3
 open class DisplaySwitchLayout: UICollectionViewLayout {
     
     fileprivate let numberOfColumns: Int
-    fileprivate let cellPadding: CGFloat = 6.0
+    fileprivate let cellHeightPadding: CGFloat
+    fileprivate let cellWidthPadding: CGFloat
     fileprivate let staticCellHeight: CGFloat
     fileprivate let nextLayoutStaticCellHeight: CGFloat
     fileprivate var previousContentOffset: NSValue?
-    fileprivate var layoutState: LayoutState
+    let layoutState: LayoutState
+    fileprivate let listLayoutCountOfColumns = 1
+    fileprivate let gridLayoutCountOfColumns: Int
   
     fileprivate var baseLayoutAttributes: [DisplaySwitchLayoutAttributes]!
     
@@ -36,11 +36,14 @@ open class DisplaySwitchLayout: UICollectionViewLayout {
     
     // MARK: - Lifecycle
   
-    public init(staticCellHeight: CGFloat, nextLayoutStaticCellHeight: CGFloat, layoutState: LayoutState) {
+    public init(staticCellHeight: CGFloat, nextLayoutStaticCellHeight: CGFloat, layoutState: LayoutState, cellHeightPadding: CGFloat = 6, cellWidthPadding: CGFloat = 6, gridLayoutCountOfColumns: Int = 3) {
         self.staticCellHeight = staticCellHeight
-        self.numberOfColumns = layoutState == .list ? ListLayoutCountOfColumns : GridLayoutCountOfColumns
+        self.numberOfColumns = layoutState == .list ? listLayoutCountOfColumns : gridLayoutCountOfColumns
         self.layoutState = layoutState
         self.nextLayoutStaticCellHeight = nextLayoutStaticCellHeight
+        self.cellHeightPadding = cellHeightPadding
+        self.cellWidthPadding = cellWidthPadding
+        self.gridLayoutCountOfColumns = gridLayoutCountOfColumns
         
         super.init()
     }
@@ -67,9 +70,9 @@ open class DisplaySwitchLayout: UICollectionViewLayout {
         var yOffset = [CGFloat](repeating: contentHeight, count: numberOfColumns)
         for item in 0 ..< collectionView!.numberOfItems(inSection: 0) {
             let indexPath = IndexPath(item: item, section: 0)
-            let height = cellPadding + staticCellHeight
+            let height = cellHeightPadding + staticCellHeight
             let frame = CGRect(x: xOffsets[column], y: yOffset[column], width: columnWidth, height: height)
-            let insetFrame = frame.insetBy(dx: cellPadding, dy: cellPadding)
+            let insetFrame = frame.insetBy(dx: cellWidthPadding, dy: cellHeightPadding)
             let attributes = DisplaySwitchLayoutAttributes(forCellWith: indexPath)
             attributes.frame = insetFrame
             baseLayoutAttributes.append(attributes)
@@ -106,11 +109,11 @@ open class DisplaySwitchLayout: UICollectionViewLayout {
                 return previousContentOffsetPoint
             }
             if layoutState == LayoutState.list {
-                let offsetY = ceil(previousContentOffsetPoint.y + (staticCellHeight * previousContentOffsetPoint.y / nextLayoutStaticCellHeight) + cellPadding)
+                let offsetY = ceil(previousContentOffsetPoint.y + (staticCellHeight * previousContentOffsetPoint.y / nextLayoutStaticCellHeight) + cellHeightPadding)
                 return CGPoint(x: superContentOffset.x, y: offsetY)
             } else {
-                let realOffsetY = ceil((previousContentOffsetPoint.y / nextLayoutStaticCellHeight * staticCellHeight / CGFloat(numberOfColumns)) - cellPadding)
-                let offsetY = floor(realOffsetY / staticCellHeight) * staticCellHeight + cellPadding
+                let realOffsetY = ceil((previousContentOffsetPoint.y / nextLayoutStaticCellHeight * staticCellHeight / CGFloat(numberOfColumns)) - cellHeightPadding)
+                let offsetY = floor(realOffsetY / staticCellHeight) * staticCellHeight + cellHeightPadding
                 return CGPoint(x: superContentOffset.x, y: offsetY)
             }
         }
