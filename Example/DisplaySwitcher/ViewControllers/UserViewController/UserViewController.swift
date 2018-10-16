@@ -132,7 +132,7 @@ extension UserViewController {
         view.removeGestureRecognizer(tap)
     }
     
-    func handleTap() {
+    @objc func handleTap() {
         view.endEditing(true)
     }
     
