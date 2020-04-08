@@ -65,17 +65,20 @@ open class DisplaySwitchLayout: UICollectionViewLayout {
         }
         var column = 0
         var yOffset = [CGFloat](repeating: contentHeight, count: numberOfColumns)
-        for item in 0 ..< collectionView!.numberOfItems(inSection: 0) {
-            let indexPath = IndexPath(item: item, section: 0)
-            let height = cellPadding + staticCellHeight
-            let frame = CGRect(x: xOffsets[column], y: yOffset[column], width: columnWidth, height: height)
-            let insetFrame = frame.insetBy(dx: cellPadding, dy: cellPadding)
-            let attributes = DisplaySwitchLayoutAttributes(forCellWith: indexPath)
-            attributes.frame = insetFrame
-            baseLayoutAttributes.append(attributes)
-            contentHeight = max(contentHeight, frame.maxY)
-            yOffset[column] = yOffset[column] + height
-            column = column == (numberOfColumns - 1) ? 0 : column + 1
+        
+        if let collectionView = collectionView {
+            for item in 0 ..< collectionView.numberOfItems(inSection: 0) {
+                let indexPath = IndexPath(item: item, section: 0)
+                let height = cellPadding + staticCellHeight
+                let frame = CGRect(x: xOffsets[column], y: yOffset[column], width: columnWidth, height: height)
+                let insetFrame = frame.insetBy(dx: cellPadding, dy: cellPadding)
+                let attributes = DisplaySwitchLayoutAttributes(forCellWith: indexPath)
+                attributes.frame = insetFrame
+                baseLayoutAttributes.append(attributes)
+                contentHeight = max(contentHeight, frame.maxY)
+                yOffset[column] = yOffset[column] + height
+                column = column == (numberOfColumns - 1) ? 0 : column + 1
+            }
         }
     }
     

@@ -47,7 +47,9 @@ class UserCollectionViewCell: UICollectionViewCell, CellInterface {
     }
     
     func setupGridLayoutConstraints(_ transitionProgress: CGFloat, cellWidth: CGFloat) {
-        avatarImageViewHeightConstraint.constant = ceil((cellWidth - avatarListLayoutSize) * transitionProgress + avatarListLayoutSize)
+        avatarImageViewHeightConstraint.constant = ceil(
+            (cellWidth - avatarListLayoutSize) * transitionProgress + avatarListLayoutSize
+        )
         avatarImageViewWidthConstraint.constant = ceil(avatarImageViewHeightConstraint.constant)
         nameListLabelLeadingConstraint.constant = -avatarImageViewWidthConstraint.constant * transitionProgress + initialLabelsLeadingConstraintValue
         statisticLabelLeadingConstraint.constant = nameListLabelLeadingConstraint.constant
@@ -57,7 +59,9 @@ class UserCollectionViewCell: UICollectionViewCell, CellInterface {
     }
     
     func setupListLayoutConstraints(_ transitionProgress: CGFloat, cellWidth: CGFloat) {
-        avatarImageViewHeightConstraint.constant = ceil(avatarGridLayoutSize - (avatarGridLayoutSize - avatarListLayoutSize) * transitionProgress)
+        avatarImageViewHeightConstraint.constant = ceil(
+            avatarGridLayoutSize - (avatarGridLayoutSize - avatarListLayoutSize) * transitionProgress
+        )
         avatarImageViewWidthConstraint.constant = avatarImageViewHeightConstraint.constant 
         nameListLabelLeadingConstraint.constant = avatarImageViewWidthConstraint.constant * transitionProgress + (initialLabelsLeadingConstraintValue - avatarImageViewHeightConstraint.constant)
         statisticLabelLeadingConstraint.constant = nameListLabelLeadingConstraint.constant
@@ -71,12 +75,15 @@ class UserCollectionViewCell: UICollectionViewCell, CellInterface {
         if let attributes = layoutAttributes as? DisplaySwitchLayoutAttributes {
             if attributes.transitionProgress > 0 {
                 if attributes.layoutState == .grid {
-                    setupGridLayoutConstraints(attributes.transitionProgress, cellWidth: attributes.nextLayoutCellFrame.width)
+                    setupGridLayoutConstraints(attributes.transitionProgress,
+                                               cellWidth: attributes.nextLayoutCellFrame.width)
                     avatarGridLayoutSize = attributes.nextLayoutCellFrame.width
                 } else {
-                    setupListLayoutConstraints(attributes.transitionProgress, cellWidth: attributes.nextLayoutCellFrame.width)
+                    setupListLayoutConstraints(attributes.transitionProgress,
+                                               cellWidth: attributes.nextLayoutCellFrame.width)
                 }
             }
         }
     }
+    
 }
