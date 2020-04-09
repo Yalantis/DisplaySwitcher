@@ -41,21 +41,15 @@ class UserViewController: UIViewController {
         super.viewDidLoad()
         
         tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
-        
+        searchBar.delegate = self
         searchUsers = users
         rotationButton.isSelected = true
         setupCollectionView()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        collectionView.collectionViewLayout = listLayout
-    }
-    
     // MARK: - Private methods
     fileprivate func setupCollectionView() {
-        
+        collectionView.collectionViewLayout = listLayout
         collectionView.register(UserCollectionViewCell.cellNib, forCellWithReuseIdentifier: UserCollectionViewCell.id)
     }
     
@@ -95,8 +89,6 @@ class UserViewController: UIViewController {
 
 extension UserViewController: UICollectionViewDataSource {
     
-    // MARK: - UICollectionViewDataSource
-    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(
             withReuseIdentifier: UserCollectionViewCell.id,
@@ -115,17 +107,12 @@ extension UserViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return searchUsers.count
     }
-    
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
-    
+
 }
 
 
 extension UserViewController: UICollectionViewDelegate {
     
-    // MARK: - UICollectionViewDelegate
     func collectionView(_ collectionView: UICollectionView,
                         transitionLayoutForOldLayout fromLayout: UICollectionViewLayout,
                         newLayout toLayout: UICollectionViewLayout) -> UICollectionViewTransitionLayout {
@@ -149,7 +136,7 @@ extension UserViewController: UICollectionViewDelegate {
     
 }
 
-extension UserViewController {
+extension UserViewController: UISearchBarDelegate {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText.isEmpty {
