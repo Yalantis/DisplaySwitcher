@@ -25,8 +25,10 @@ open class DisplaySwitchLayoutAttributes: UICollectionViewLayoutAttributes {
     
     override open func isEqual(_ object: Any?) -> Bool {
         guard let attributes = object as? DisplaySwitchLayoutAttributes else { return false }
-        guard attributes.transitionProgress == transitionProgress && nextLayoutCellFrame == nextLayoutCellFrame && layoutState == layoutState else { return false }
+        guard attributes.transitionProgress == transitionProgress &&
+            nextLayoutCellFrame == nextLayoutCellFrame && layoutState == layoutState else { return false }
     
         return super.isEqual(object)
     }
+    
 }

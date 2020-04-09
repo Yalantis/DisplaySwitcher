@@ -20,7 +20,12 @@ private let finishTransitionValue = 1.0
     fileprivate var updater: CADisplayLink!
     fileprivate var startTime: TimeInterval!
     
-    public init(duration: TimeInterval, collectionView: UICollectionView, destinationLayout: UICollectionViewLayout, layoutState: LayoutState) {
+    public init(
+        duration: TimeInterval,
+        collectionView: UICollectionView,
+        destinationLayout: UICollectionViewLayout,
+        layoutState: LayoutState
+    ) {
         self.collectionView = collectionView
         self.destinationLayout = destinationLayout
         self.layoutState = layoutState

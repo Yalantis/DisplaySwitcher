@@ -24,16 +24,24 @@ class UserViewController: UIViewController {
     fileprivate var users = UserDataProvider().generateFakeUsers()
     fileprivate var searchUsers = [User]()
     fileprivate var isTransitionAvailable = true
-    fileprivate lazy var listLayout = DisplaySwitchLayout(staticCellHeight: listLayoutStaticCellHeight, nextLayoutStaticCellHeight: gridLayoutStaticCellHeight, layoutState: .list)
-    fileprivate lazy var gridLayout = DisplaySwitchLayout(staticCellHeight: gridLayoutStaticCellHeight, nextLayoutStaticCellHeight: listLayoutStaticCellHeight, layoutState: .grid)
+    fileprivate lazy var listLayout = DisplaySwitchLayout(
+        staticCellHeight: listLayoutStaticCellHeight,
+        nextLayoutStaticCellHeight: gridLayoutStaticCellHeight,
+        layoutState: .list
+    )
+    fileprivate lazy var gridLayout = DisplaySwitchLayout(
+        staticCellHeight: gridLayoutStaticCellHeight,
+        nextLayoutStaticCellHeight: listLayoutStaticCellHeight,
+        layoutState: .grid
+    )
     fileprivate var layoutState: LayoutState = .list
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-      
-        tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
         
+        tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+        searchBar.delegate = self
         searchUsers = users
         rotationButton.isSelected = true
         setupCollectionView()
@@ -42,7 +50,7 @@ class UserViewController: UIViewController {
     // MARK: - Private methods
     fileprivate func setupCollectionView() {
         collectionView.collectionViewLayout = listLayout
-        collectionView.register(UserCollectionViewCell.cellNib, forCellWithReuseIdentifier:UserCollectionViewCell.id)
+        collectionView.register(UserCollectionViewCell.cellNib, forCellWithReuseIdentifier: UserCollectionViewCell.id)
     }
     
     // MARK: - Actions
@@ -53,10 +61,20 @@ class UserViewController: UIViewController {
         let transitionManager: TransitionManager
         if layoutState == .list {
             layoutState = .grid
-            transitionManager = TransitionManager(duration: animationDuration, collectionView: collectionView!, destinationLayout: gridLayout, layoutState: layoutState)
+            transitionManager = TransitionManager(
+                duration: animationDuration,
+                collectionView: collectionView!,
+                destinationLayout: gridLayout,
+                layoutState: layoutState
+            )
         } else {
             layoutState = .list
-            transitionManager = TransitionManager(duration: animationDuration, collectionView: collectionView!, destinationLayout: listLayout, layoutState: layoutState)
+            transitionManager = TransitionManager(
+                duration: animationDuration,
+                collectionView: collectionView!,
+                destinationLayout: listLayout,
+                layoutState: layoutState
+            )
         }
         transitionManager.startInteractiveTransition()
         rotationButton.isSelected = layoutState == .list
@@ -66,31 +84,41 @@ class UserViewController: UIViewController {
     @IBAction func tapRecognized() {
         view.endEditing(true)
     }
-
+    
 }
 
-extension UserViewController {
+extension UserViewController: UICollectionViewDataSource {
     
-    // MARK: - UICollectionViewDataSource
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return searchUsers.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAtIndexPath indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: UserCollectionViewCell.id, for: indexPath) as! UserCollectionViewCell
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(
+            withReuseIdentifier: UserCollectionViewCell.id,
+            for: indexPath
+            ) as! UserCollectionViewCell
         if layoutState == .grid {
             cell.setupGridLayoutConstraints(1, cellWidth: cell.frame.width)
         } else {
             cell.setupListLayoutConstraints(1, cellWidth: cell.frame.width)
         }
-        cell.bind(searchUsers[(indexPath as NSIndexPath).row])
+        cell.bind(searchUsers[indexPath.row])
         
         return cell
     }
     
-    // MARK: - UICollectionViewDelegate
-    func collectionView(_ collectionView: UICollectionView, transitionLayoutForOldLayout fromLayout: UICollectionViewLayout, newLayout toLayout: UICollectionViewLayout) -> UICollectionViewTransitionLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return searchUsers.count
+    }
+
+}
+
+
+extension UserViewController: UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        transitionLayoutForOldLayout fromLayout: UICollectionViewLayout,
+                        newLayout toLayout: UICollectionViewLayout) -> UICollectionViewTransitionLayout {
+        
         let customTransitionLayout = TransitionLayout(currentLayout: fromLayout, nextLayout: toLayout)
+        
         return customTransitionLayout
     }
     
@@ -108,7 +136,7 @@ extension UserViewController {
     
 }
 
-extension UserViewController {
+extension UserViewController: UISearchBarDelegate {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText.isEmpty {
@@ -116,12 +144,12 @@ extension UserViewController {
         } else {
             searchUsers = searchUsers.filter { return $0.name.contains(searchText) }
         }
-      
+        
         collectionView.reloadData()
     }
     
     func collectionView(_ collectionView: UICollectionView,didSelectItemAtIndexPath indexPath: IndexPath) {
-        print("Hi \((indexPath as NSIndexPath).row)")
+        print("Hi \(indexPath.row)")
     }
     
     func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
@@ -137,4 +165,4 @@ extension UserViewController {
     }
     
 }
-    
+

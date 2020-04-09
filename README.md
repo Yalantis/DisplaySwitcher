@@ -14,9 +14,9 @@ Check this <a href="https://dribbble.com/shots/2276068-Contact-Display-Switch">p
 Also, read how it was done in [our blog](https://yalantis.com/blog/contact-display-switch-animation/)
 
 ## Requirements
-- iOS 8.0+
-- Xcode 9
-- Swift 4.2
+- iOS 10.0+
+- Xcode 11
+- Swift 5
 
 ## Installing 
 
@@ -24,7 +24,7 @@ Also, read how it was done in [our blog](https://yalantis.com/blog/contact-displ
 
 ```ruby
 use_frameworks!
-pod ‘DisplaySwitcher’, '~> 1.2’
+pod ‘DisplaySwitcher’, '~> 2.0’
 ```
 
 ### [Carthage](https://github.com/Carthage/Carthage)
@@ -105,7 +105,7 @@ P.S. We’re going to publish more awesomeness wrapped in code and a tutorial on
 
 The MIT License (MIT)
 
-Copyright © 2018 Yalantis
+Copyright © 2017 Yalantis
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

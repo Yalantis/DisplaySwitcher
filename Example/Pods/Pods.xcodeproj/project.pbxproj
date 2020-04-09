@@ -7,344 +7,498 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18C95DAAD58A2EB42B65B39F1260E65F /* DisplaySwitcher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CA026B952A6F4BF1427498AB5F6E37C4 /* DisplaySwitcher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1EF84CE4CE9CCDAB8B32A257399F84C5 /* DisplaySwitchLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E13C2379BFAB132FF4C2B69B2057DE /* DisplaySwitchLayoutAttributes.swift */; };
-		1FACBBEFCA4D4DAABD5B23D9674626ED /* Pods-DisplaySwitcher_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA338B494E8A8A1A7F233B569AA7BFCC /* Pods-DisplaySwitcher_Example-dummy.m */; };
-		33A4F3954AFD69EFFEA22B569E76B4CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		50A5AD206731964CDDE208B09B38A1AA /* DisplaySwitcher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C752F28B4BEDDB5441273A529B524261 /* DisplaySwitcher-dummy.m */; };
-		7AB18ECEAAFBACF5A127147C2E635F35 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		897F4B15DDA09470D0842EA67DCBDBD0 /* SwitchLayoutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5BD2957DCED447B3A38445D9BC4628 /* SwitchLayoutButton.swift */; };
-		92DA1570DEB62379C222992415AE950A /* Pods-DisplaySwitcher_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A2CDB8E9F07D35996E4170E2278D498 /* Pods-DisplaySwitcher_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C98CC0928732815071FBF80676E189A /* DisplaySwitchLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08605F6009005CB3B6DCAC6E534FA80 /* DisplaySwitchLayout.swift */; };
-		E7E5D8E8573C21B79038C791301CBBA7 /* TransitionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104D413B94EC2D6E4FB46F6F173717DD /* TransitionLayout.swift */; };
-		E9A74560058277D47DD0BE9E5B6BC2B6 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0769CC682E90A4161FBD89A10442B25 /* TransitionManager.swift */; };
+		130C8CD5993CF344FEAE6FDD672928C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		2CBDB7F6798531223C0078774272F560 /* DisplaySwitcher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3EDD1895AC5F3964AB9697B7588FC1B1 /* DisplaySwitcher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DDE51638ABCAA5AF01208DCB94F0E9A /* DisplaySwitcher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F6CA9CD983BA7BA6320AFBB9CBAE66 /* DisplaySwitcher-dummy.m */; };
+		741148E8FE9DAF920EE7C17C72E41F6D /* Pods-DisplaySwitcher_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D7BEB0DF39B35B7F9552539B45C598 /* Pods-DisplaySwitcher_Example-dummy.m */; };
+		780831DFC51EE8F71C3EA9F8E681BF78 /* TransitionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDA5F8A20F6C598B89B007F83AFB3C1 /* TransitionLayout.swift */; };
+		9317FE6CAC8306E1134C147D51458688 /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1B8C1F380E4689D3A681C6DEE2D772 /* TransitionManager.swift */; };
+		B78F84C70488A14250354A29197673F0 /* DisplaySwitchLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 091BBDC5E162CE51CB3517C1919727CE /* DisplaySwitchLayout.swift */; };
+		BCC2191AEDB6B80ACC45C293A42667C7 /* SwitchLayoutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6752F6A957BFC04D799C557AA8BADD9E /* SwitchLayoutButton.swift */; };
+		E6C3753E9A760A4B002CCCC1E519D8A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		E8C45F087B6DE6EF69A81E26CABE2E13 /* Pods-DisplaySwitcher_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DC15F82B6DBD945A0840629A5F185F31 /* Pods-DisplaySwitcher_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1DEBDAD43669136689F1FED09FE3F4D /* DisplaySwitchLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4EB2A92D9D397C93579F5B10D1F1B84 /* DisplaySwitchLayoutAttributes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B470971EC94E789F84D0A3919AF3C228 /* PBXContainerItemProxy */ = {
+		26F1411F5E164A557F9A2FABB67B9147 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 4B815F139829CD2C383A9E288DB6AF2D;
+			remoteGlobalIDString = BC9D3F7D00616FCFD05B04315D91B2AD;
 			remoteInfo = DisplaySwitcher;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		104D413B94EC2D6E4FB46F6F173717DD /* TransitionLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TransitionLayout.swift; sourceTree = "<group>"; };
-		1426F7C677E831CBCB63307370CB4942 /* DisplaySwitcher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DisplaySwitcher.xcconfig; sourceTree = "<group>"; };
-		3B5BD2957DCED447B3A38445D9BC4628 /* SwitchLayoutButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwitchLayoutButton.swift; sourceTree = "<group>"; };
-		416E28C88470D1E664FE9709AC69A17D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		4A2CDB8E9F07D35996E4170E2278D498 /* Pods-DisplaySwitcher_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DisplaySwitcher_Example-umbrella.h"; sourceTree = "<group>"; };
-		4E758E234FECC25CF2FBFFCC738D54D2 /* Pods_DisplaySwitcher_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DisplaySwitcher_Example.framework; path = "Pods-DisplaySwitcher_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4FC4C5E8304A943F8574C87E1B1DAD25 /* Pods-DisplaySwitcher_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DisplaySwitcher_Example-frameworks.sh"; sourceTree = "<group>"; };
-		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		684A2335EE2815CC2E0618F103366D9C /* DisplaySwitcher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DisplaySwitcher.modulemap; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A08605F6009005CB3B6DCAC6E534FA80 /* DisplaySwitchLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DisplaySwitchLayout.swift; sourceTree = "<group>"; };
-		A1A7665F3DB47FE96E8C816F175FA8B8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A97006B8EB56F4301383873A6FFD8F25 /* DisplaySwitcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DisplaySwitcher.framework; path = DisplaySwitcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0769CC682E90A4161FBD89A10442B25 /* TransitionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
-		B5E13C2379BFAB132FF4C2B69B2057DE /* DisplaySwitchLayoutAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DisplaySwitchLayoutAttributes.swift; sourceTree = "<group>"; };
-		B9F05DDAF167F9E32C6642A3DA81B162 /* Pods-DisplaySwitcher_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DisplaySwitcher_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		BCD8927616CBA7A2A5BCBDA794763656 /* DisplaySwitcher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DisplaySwitcher-prefix.pch"; sourceTree = "<group>"; };
-		BDD572427E1094288AA37B41BCA90D5F /* Pods-DisplaySwitcher_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DisplaySwitcher_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		BF72913CFE33A93540097FC47D326333 /* Pods-DisplaySwitcher_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DisplaySwitcher_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C04B35DEDF6A41C96333B08354AC59A3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C423556835286FE6BB09CBB0A7A77C6E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		C752F28B4BEDDB5441273A529B524261 /* DisplaySwitcher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DisplaySwitcher-dummy.m"; sourceTree = "<group>"; };
-		C976F3200B30D2854374BB1D52EF4175 /* Pods-DisplaySwitcher_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DisplaySwitcher_Example.modulemap"; sourceTree = "<group>"; };
-		CA026B952A6F4BF1427498AB5F6E37C4 /* DisplaySwitcher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DisplaySwitcher-umbrella.h"; sourceTree = "<group>"; };
-		CA338B494E8A8A1A7F233B569AA7BFCC /* Pods-DisplaySwitcher_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DisplaySwitcher_Example-dummy.m"; sourceTree = "<group>"; };
-		D9C05E08351EB41A1D1B7C9213ADD860 /* Pods-DisplaySwitcher_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DisplaySwitcher_Example.release.xcconfig"; sourceTree = "<group>"; };
-		F5D975E5207BF6727D2D596DAA0042CE /* DisplaySwitcher.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = DisplaySwitcher.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		FC7D07BB866016D158922166DF2969DC /* Pods-DisplaySwitcher_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DisplaySwitcher_Example-resources.sh"; sourceTree = "<group>"; };
+		091BBDC5E162CE51CB3517C1919727CE /* DisplaySwitchLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DisplaySwitchLayout.swift; sourceTree = "<group>"; };
+		1E5AB67E0AA571BAD8B10B516165583D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		28CCAA167D85E0F51C7AB6960AC10401 /* Pods-DisplaySwitcher_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DisplaySwitcher_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2CEBCEFBBBAC7D834DE6B269B7362DD5 /* Pods-DisplaySwitcher_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DisplaySwitcher_Example.release.xcconfig"; sourceTree = "<group>"; };
+		30D7BEB0DF39B35B7F9552539B45C598 /* Pods-DisplaySwitcher_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DisplaySwitcher_Example-dummy.m"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3EDD1895AC5F3964AB9697B7588FC1B1 /* DisplaySwitcher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DisplaySwitcher-umbrella.h"; sourceTree = "<group>"; };
+		528A8D6E33ECD4E7BDBA1C674DDBEB3E /* DisplaySwitcher.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = DisplaySwitcher.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		56A9BC1BEFD748B71F9E258C092AD937 /* DisplaySwitcher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DisplaySwitcher-prefix.pch"; sourceTree = "<group>"; };
+		5A1B8C1F380E4689D3A681C6DEE2D772 /* TransitionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
+		6385EF7FD9CD2E9BDC1E326BA6B810A4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		66707A1746D226EE243DE6DFB8AFF673 /* Pods-DisplaySwitcher_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DisplaySwitcher_Example.modulemap"; sourceTree = "<group>"; };
+		6752F6A957BFC04D799C557AA8BADD9E /* SwitchLayoutButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwitchLayoutButton.swift; sourceTree = "<group>"; };
+		6EDA5F8A20F6C598B89B007F83AFB3C1 /* TransitionLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TransitionLayout.swift; sourceTree = "<group>"; };
+		89D5C123918D0C384129AFE65A3345CB /* Pods-DisplaySwitcher_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DisplaySwitcher_Example-frameworks.sh"; sourceTree = "<group>"; };
+		8E6FCE8BF490A0A15A6A7D6240E4765A /* Pods-DisplaySwitcher_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DisplaySwitcher_Example-Info.plist"; sourceTree = "<group>"; };
+		97A3DC24B84B06D8304F5738394993FA /* DisplaySwitcher-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DisplaySwitcher-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A73E6D531F7D94645127D914544A4CD7 /* Pods-DisplaySwitcher_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DisplaySwitcher_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		A7F6CA9CD983BA7BA6320AFBB9CBAE66 /* DisplaySwitcher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DisplaySwitcher-dummy.m"; sourceTree = "<group>"; };
+		B6FBB4B07531F6AE88F6DA131B2637F8 /* DisplaySwitcher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DisplaySwitcher.xcconfig; sourceTree = "<group>"; };
+		C13E66B90690996BDE654DEA46FC0100 /* Pods-DisplaySwitcher_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DisplaySwitcher_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		D4EB2A92D9D397C93579F5B10D1F1B84 /* DisplaySwitchLayoutAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DisplaySwitchLayoutAttributes.swift; sourceTree = "<group>"; };
+		D6CCF2EC774CAE11EF4803513C6312D1 /* DisplaySwitcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DisplaySwitcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC15F82B6DBD945A0840629A5F185F31 /* Pods-DisplaySwitcher_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DisplaySwitcher_Example-umbrella.h"; sourceTree = "<group>"; };
+		ED9DF2A4813DAA7DFFA0579F26F11D7E /* Pods_DisplaySwitcher_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DisplaySwitcher_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3775E3E1FB974610360B4880BB25338 /* DisplaySwitcher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DisplaySwitcher.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E9D8B36A72329DD4E6D6D48EB848E0F7 /* Frameworks */ = {
+		22FB16325033776A78F45C45CA779773 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7AB18ECEAAFBACF5A127147C2E635F35 /* Foundation.framework in Frameworks */,
+				E6C3753E9A760A4B002CCCC1E519D8A6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FEEFE0A5FF3AF1FBA1B18A18F7BD9D9B /* Frameworks */ = {
+		E10AF32C149C5D569A1D35AB4257DC2F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33A4F3954AFD69EFFEA22B569E76B4CB /* Foundation.framework in Frameworks */,
+				130C8CD5993CF344FEAE6FDD672928C6 /* Foundation.framework in Frameworks */,
+
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		108115CF955D634E821ACDB2A13DDFA1 /* Views */ = {
+		1C651B89680752046281095E5B57F18F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3B5BD2957DCED447B3A38445D9BC4628 /* SwitchLayoutButton.swift */,
+				D6CCF2EC774CAE11EF4803513C6312D1 /* DisplaySwitcher.framework */,
+				ED9DF2A4813DAA7DFFA0579F26F11D7E /* Pods_DisplaySwitcher_Example.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2075B680B221BFF8B734A16D95396474 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6752F6A957BFC04D799C557AA8BADD9E /* SwitchLayoutButton.swift */,
 			);
 			name = Views;
 			path = Pod/Classes/Views;
 			sourceTree = "<group>";
 		};
-		17EC0029A8F1F17081CF367C94DBBBED /* DisplaySwitcher */ = {
+		29FF7989E2CE555B5E7B114775999694 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CA564063E9F30A057B199FD8296567FB /* Layouts */,
-				1FDE9293B41E27AE614079B02A5EF9D5 /* Pod */,
-				1B827624EC28BD88040DCDB370341411 /* Support Files */,
-				7CFFEBD39824FA67E1B474F481D26F37 /* TransitionLayout */,
-				AFCABA34053D9A58B4E1D0982BC03762 /* TransitionManager */,
-				108115CF955D634E821ACDB2A13DDFA1 /* Views */,
-			);
-			name = DisplaySwitcher;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		1B827624EC28BD88040DCDB370341411 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				684A2335EE2815CC2E0618F103366D9C /* DisplaySwitcher.modulemap */,
-				1426F7C677E831CBCB63307370CB4942 /* DisplaySwitcher.xcconfig */,
-				C752F28B4BEDDB5441273A529B524261 /* DisplaySwitcher-dummy.m */,
-				BCD8927616CBA7A2A5BCBDA794763656 /* DisplaySwitcher-prefix.pch */,
-				CA026B952A6F4BF1427498AB5F6E37C4 /* DisplaySwitcher-umbrella.h */,
-				A1A7665F3DB47FE96E8C816F175FA8B8 /* Info.plist */,
+				F3775E3E1FB974610360B4880BB25338 /* DisplaySwitcher.modulemap */,
+				B6FBB4B07531F6AE88F6DA131B2637F8 /* DisplaySwitcher.xcconfig */,
+				A7F6CA9CD983BA7BA6320AFBB9CBAE66 /* DisplaySwitcher-dummy.m */,
+				97A3DC24B84B06D8304F5738394993FA /* DisplaySwitcher-Info.plist */,
+				56A9BC1BEFD748B71F9E258C092AD937 /* DisplaySwitcher-prefix.pch */,
+				3EDD1895AC5F3964AB9697B7588FC1B1 /* DisplaySwitcher-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/DisplaySwitcher";
 			sourceTree = "<group>";
 		};
-		1F9A7CC186B439B53181381545CDEBF6 /* Development Pods */ = {
+		6E7906A94ED9BD8CED4EFE37BA8845E1 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				17EC0029A8F1F17081CF367C94DBBBED /* DisplaySwitcher */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		1FDE9293B41E27AE614079B02A5EF9D5 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				F5D975E5207BF6727D2D596DAA0042CE /* DisplaySwitcher.podspec */,
-				416E28C88470D1E664FE9709AC69A17D /* LICENSE */,
-				C423556835286FE6BB09CBB0A7A77C6E /* README.md */,
+				B4D3D8EBDEA229D8582E4AD957566A62 /* DisplaySwitcher */,
+
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+		70589B65ECC5C56A9BDB2679CDE214E4 /* Layouts */ = {
 			isa = PBXGroup;
 			children = (
-				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+				091BBDC5E162CE51CB3517C1919727CE /* DisplaySwitchLayout.swift */,
+				D4EB2A92D9D397C93579F5B10D1F1B84 /* DisplaySwitchLayoutAttributes.swift */,
 			);
-			name = iOS;
+			name = Layouts;
+			path = Pod/Classes/Layouts;
+
 			sourceTree = "<group>";
 		};
-		7CFFEBD39824FA67E1B474F481D26F37 /* TransitionLayout */ = {
+		A1A2BB45FC7B9685BABC79F16D1F91CD /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				104D413B94EC2D6E4FB46F6F173717DD /* TransitionLayout.swift */,
+				EAD5F3CC21554F3C1D8BAB1513C3288A /* Pods-DisplaySwitcher_Example */,
 			);
-			name = TransitionLayout;
-			path = Pod/Classes/TransitionLayout;
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		7DB346D0F39D3F0E887471402A8071AB = {
+		B13D24716E22E979A5466CADB9678D46 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				1F9A7CC186B439B53181381545CDEBF6 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				A141AEFC44293189111352B614440D1B /* Products */,
-				EFDFD9E84C6F9581C4423DF0603784C7 /* Targets Support Files */,
+				528A8D6E33ECD4E7BDBA1C674DDBEB3E /* DisplaySwitcher.podspec */,
+				1E5AB67E0AA571BAD8B10B516165583D /* LICENSE */,
+				6385EF7FD9CD2E9BDC1E326BA6B810A4 /* README.md */,
 			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		A141AEFC44293189111352B614440D1B /* Products */ = {
+		B3D2EB353B8F90AA21AE9AAFFD4B140A /* TransitionManager */ = {
 			isa = PBXGroup;
 			children = (
-				A97006B8EB56F4301383873A6FFD8F25 /* DisplaySwitcher.framework */,
-				4E758E234FECC25CF2FBFFCC738D54D2 /* Pods_DisplaySwitcher_Example.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		A82E0B7EDCF04B2C3AEA9CC8DAC8000D /* Pods-DisplaySwitcher_Example */ = {
-			isa = PBXGroup;
-			children = (
-				C04B35DEDF6A41C96333B08354AC59A3 /* Info.plist */,
-				C976F3200B30D2854374BB1D52EF4175 /* Pods-DisplaySwitcher_Example.modulemap */,
-				BF72913CFE33A93540097FC47D326333 /* Pods-DisplaySwitcher_Example-acknowledgements.markdown */,
-				BDD572427E1094288AA37B41BCA90D5F /* Pods-DisplaySwitcher_Example-acknowledgements.plist */,
-				CA338B494E8A8A1A7F233B569AA7BFCC /* Pods-DisplaySwitcher_Example-dummy.m */,
-				4FC4C5E8304A943F8574C87E1B1DAD25 /* Pods-DisplaySwitcher_Example-frameworks.sh */,
-				FC7D07BB866016D158922166DF2969DC /* Pods-DisplaySwitcher_Example-resources.sh */,
-				4A2CDB8E9F07D35996E4170E2278D498 /* Pods-DisplaySwitcher_Example-umbrella.h */,
-				B9F05DDAF167F9E32C6642A3DA81B162 /* Pods-DisplaySwitcher_Example.debug.xcconfig */,
-				D9C05E08351EB41A1D1B7C9213ADD860 /* Pods-DisplaySwitcher_Example.release.xcconfig */,
-			);
-			name = "Pods-DisplaySwitcher_Example";
-			path = "Target Support Files/Pods-DisplaySwitcher_Example";
-			sourceTree = "<group>";
-		};
-		AFCABA34053D9A58B4E1D0982BC03762 /* TransitionManager */ = {
-			isa = PBXGroup;
-			children = (
-				B0769CC682E90A4161FBD89A10442B25 /* TransitionManager.swift */,
+				5A1B8C1F380E4689D3A681C6DEE2D772 /* TransitionManager.swift */,
 			);
 			name = TransitionManager;
 			path = Pod/Classes/TransitionManager;
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		B4D3D8EBDEA229D8582E4AD957566A62 /* DisplaySwitcher */ = {
 			isa = PBXGroup;
 			children = (
-				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+				70589B65ECC5C56A9BDB2679CDE214E4 /* Layouts */,
+				B13D24716E22E979A5466CADB9678D46 /* Pod */,
+				29FF7989E2CE555B5E7B114775999694 /* Support Files */,
+				F94A2AAFD9B6B1FA6CD54E8C7AA7AAE9 /* TransitionLayout */,
+				B3D2EB353B8F90AA21AE9AAFFD4B140A /* TransitionManager */,
+				2075B680B221BFF8B734A16D95396474 /* Views */,
+			);
+			name = DisplaySwitcher;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				6E7906A94ED9BD8CED4EFE37BA8845E1 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				1C651B89680752046281095E5B57F18F /* Products */,
+				A1A2BB45FC7B9685BABC79F16D1F91CD /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CA564063E9F30A057B199FD8296567FB /* Layouts */ = {
+		EAD5F3CC21554F3C1D8BAB1513C3288A /* Pods-DisplaySwitcher_Example */ = {
 			isa = PBXGroup;
 			children = (
-				A08605F6009005CB3B6DCAC6E534FA80 /* DisplaySwitchLayout.swift */,
-				B5E13C2379BFAB132FF4C2B69B2057DE /* DisplaySwitchLayoutAttributes.swift */,
+				66707A1746D226EE243DE6DFB8AFF673 /* Pods-DisplaySwitcher_Example.modulemap */,
+				28CCAA167D85E0F51C7AB6960AC10401 /* Pods-DisplaySwitcher_Example-acknowledgements.markdown */,
+				A73E6D531F7D94645127D914544A4CD7 /* Pods-DisplaySwitcher_Example-acknowledgements.plist */,
+				30D7BEB0DF39B35B7F9552539B45C598 /* Pods-DisplaySwitcher_Example-dummy.m */,
+				89D5C123918D0C384129AFE65A3345CB /* Pods-DisplaySwitcher_Example-frameworks.sh */,
+				8E6FCE8BF490A0A15A6A7D6240E4765A /* Pods-DisplaySwitcher_Example-Info.plist */,
+				DC15F82B6DBD945A0840629A5F185F31 /* Pods-DisplaySwitcher_Example-umbrella.h */,
+				C13E66B90690996BDE654DEA46FC0100 /* Pods-DisplaySwitcher_Example.debug.xcconfig */,
+				2CEBCEFBBBAC7D834DE6B269B7362DD5 /* Pods-DisplaySwitcher_Example.release.xcconfig */,
 			);
-			name = Layouts;
-			path = Pod/Classes/Layouts;
+			name = "Pods-DisplaySwitcher_Example";
+			path = "Target Support Files/Pods-DisplaySwitcher_Example";
 			sourceTree = "<group>";
 		};
-		EFDFD9E84C6F9581C4423DF0603784C7 /* Targets Support Files */ = {
+		F94A2AAFD9B6B1FA6CD54E8C7AA7AAE9 /* TransitionLayout */ = {
 			isa = PBXGroup;
 			children = (
-				A82E0B7EDCF04B2C3AEA9CC8DAC8000D /* Pods-DisplaySwitcher_Example */,
+				6EDA5F8A20F6C598B89B007F83AFB3C1 /* TransitionLayout.swift */,
 			);
-			name = "Targets Support Files";
+			name = TransitionLayout;
+			path = Pod/Classes/TransitionLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		55A896AE2BCE3A4BB93995F644C9F00D /* Headers */ = {
+		4822F2DFF86483B6BBF0B1A77CE4886C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92DA1570DEB62379C222992415AE950A /* Pods-DisplaySwitcher_Example-umbrella.h in Headers */,
+				2CBDB7F6798531223C0078774272F560 /* DisplaySwitcher-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		69ECD8F3C712AF97B41C6A6CAEAC65CE /* Headers */ = {
+		EDE722DCD66317408809F26FF57B74DB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18C95DAAD58A2EB42B65B39F1260E65F /* DisplaySwitcher-umbrella.h in Headers */,
+				E8C45F087B6DE6EF69A81E26CABE2E13 /* Pods-DisplaySwitcher_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		4B815F139829CD2C383A9E288DB6AF2D /* DisplaySwitcher */ = {
+		19D7A0A4F7D2EB195D57D3454E39301A /* Pods-DisplaySwitcher_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 271AAB1A02E7752FA3B9B01B0FB9DE36 /* Build configuration list for PBXNativeTarget "DisplaySwitcher" */;
+			buildConfigurationList = 3F6345F235217227F5EFAD55D01BC356 /* Build configuration list for PBXNativeTarget "Pods-DisplaySwitcher_Example" */;
 			buildPhases = (
-				AF51D675980CA4362AEAB875D7467080 /* Sources */,
-				FEEFE0A5FF3AF1FBA1B18A18F7BD9D9B /* Frameworks */,
-				69ECD8F3C712AF97B41C6A6CAEAC65CE /* Headers */,
+				EDE722DCD66317408809F26FF57B74DB /* Headers */,
+				7042A82594F8A5ACE255F912684F8D96 /* Sources */,
+				22FB16325033776A78F45C45CA779773 /* Frameworks */,
+				8CE139D08538C50741D07ED1C56B2C13 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FB75F5AC9379D41AD89751D47A952828 /* PBXTargetDependency */,
 			);
-			name = DisplaySwitcher;
-			productName = DisplaySwitcher;
-			productReference = A97006B8EB56F4301383873A6FFD8F25 /* DisplaySwitcher.framework */;
+			name = "Pods-DisplaySwitcher_Example";
+			productName = "Pods-DisplaySwitcher_Example";
+			productReference = ED9DF2A4813DAA7DFFA0579F26F11D7E /* Pods_DisplaySwitcher_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E825B86F5A12FAB4965EBF81330D4E8B /* Pods-DisplaySwitcher_Example */ = {
+		BC9D3F7D00616FCFD05B04315D91B2AD /* DisplaySwitcher */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9B36A197AB0BE3478AA95E9D78270444 /* Build configuration list for PBXNativeTarget "Pods-DisplaySwitcher_Example" */;
+			buildConfigurationList = F509C2163AAAF33545793A6E061592A6 /* Build configuration list for PBXNativeTarget "DisplaySwitcher" */;
 			buildPhases = (
-				6904F296F994625A9F99A6756FF2390C /* Sources */,
-				E9D8B36A72329DD4E6D6D48EB848E0F7 /* Frameworks */,
-				55A896AE2BCE3A4BB93995F644C9F00D /* Headers */,
+				4822F2DFF86483B6BBF0B1A77CE4886C /* Headers */,
+				0D56D23177F1371BB154E0A91DD85499 /* Sources */,
+				E10AF32C149C5D569A1D35AB4257DC2F /* Frameworks */,
+				6A5B75B274FDB2151558195E92E7B38B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				ABD92E4E66124D2A80CAE0D6871D83BE /* PBXTargetDependency */,
 			);
-			name = "Pods-DisplaySwitcher_Example";
-			productName = "Pods-DisplaySwitcher_Example";
-			productReference = 4E758E234FECC25CF2FBFFCC738D54D2 /* Pods_DisplaySwitcher_Example.framework */;
+			name = DisplaySwitcher;
+			productName = DisplaySwitcher;
+			productReference = D6CCF2EC774CAE11EF4803513C6312D1 /* DisplaySwitcher.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = A141AEFC44293189111352B614440D1B /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 1C651B89680752046281095E5B57F18F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4B815F139829CD2C383A9E288DB6AF2D /* DisplaySwitcher */,
-				E825B86F5A12FAB4965EBF81330D4E8B /* Pods-DisplaySwitcher_Example */,
+				BC9D3F7D00616FCFD05B04315D91B2AD /* DisplaySwitcher */,
+				19D7A0A4F7D2EB195D57D3454E39301A /* Pods-DisplaySwitcher_Example */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXSourcesBuildPhase section */
-		6904F296F994625A9F99A6756FF2390C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+/* Begin PBXResourcesBuildPhase section */
+		6A5B75B274FDB2151558195E92E7B38B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FACBBEFCA4D4DAABD5B23D9674626ED /* Pods-DisplaySwitcher_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AF51D675980CA4362AEAB875D7467080 /* Sources */ = {
+		8CE139D08538C50741D07ED1C56B2C13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D56D23177F1371BB154E0A91DD85499 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50A5AD206731964CDDE208B09B38A1AA /* DisplaySwitcher-dummy.m in Sources */,
-				9C98CC0928732815071FBF80676E189A /* DisplaySwitchLayout.swift in Sources */,
-				1EF84CE4CE9CCDAB8B32A257399F84C5 /* DisplaySwitchLayoutAttributes.swift in Sources */,
-				897F4B15DDA09470D0842EA67DCBDBD0 /* SwitchLayoutButton.swift in Sources */,
-				E7E5D8E8573C21B79038C791301CBBA7 /* TransitionLayout.swift in Sources */,
-				E9A74560058277D47DD0BE9E5B6BC2B6 /* TransitionManager.swift in Sources */,
+				4DDE51638ABCAA5AF01208DCB94F0E9A /* DisplaySwitcher-dummy.m in Sources */,
+				B78F84C70488A14250354A29197673F0 /* DisplaySwitchLayout.swift in Sources */,
+				F1DEBDAD43669136689F1FED09FE3F4D /* DisplaySwitchLayoutAttributes.swift in Sources */,
+				BCC2191AEDB6B80ACC45C293A42667C7 /* SwitchLayoutButton.swift in Sources */,
+				780831DFC51EE8F71C3EA9F8E681BF78 /* TransitionLayout.swift in Sources */,
+				9317FE6CAC8306E1134C147D51458688 /* TransitionManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7042A82594F8A5ACE255F912684F8D96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				741148E8FE9DAF920EE7C17C72E41F6D /* Pods-DisplaySwitcher_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		ABD92E4E66124D2A80CAE0D6871D83BE /* PBXTargetDependency */ = {
+		FB75F5AC9379D41AD89751D47A952828 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DisplaySwitcher;
-			target = 4B815F139829CD2C383A9E288DB6AF2D /* DisplaySwitcher */;
-			targetProxy = B470971EC94E789F84D0A3919AF3C228 /* PBXContainerItemProxy */;
+			target = BC9D3F7D00616FCFD05B04315D91B2AD /* DisplaySwitcher */;
+			targetProxy = 26F1411F5E164A557F9A2FABB67B9147 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		199D972A13F2B4C56847F7A89CCA83BC /* Debug */ = {
+		1D424BBEC5B99364259DD6075C837935 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6FBB4B07531F6AE88F6DA131B2637F8 /* DisplaySwitcher.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DisplaySwitcher/DisplaySwitcher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DisplaySwitcher/DisplaySwitcher-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 2.0;
+				MODULEMAP_FILE = "Target Support Files/DisplaySwitcher/DisplaySwitcher.modulemap";
+				PRODUCT_MODULE_NAME = DisplaySwitcher;
+				PRODUCT_NAME = DisplaySwitcher;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		33424DD2101A28249B91C4E3DB3A4E5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2CEBCEFBBBAC7D834DE6B269B7362DD5 /* Pods-DisplaySwitcher_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DisplaySwitcher_Example/Pods-DisplaySwitcher_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DisplaySwitcher_Example/Pods-DisplaySwitcher_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		41B9C6F09A980285032B76FB7F13CBCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C13E66B90690996BDE654DEA46FC0100 /* Pods-DisplaySwitcher_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DisplaySwitcher_Example/Pods-DisplaySwitcher_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DisplaySwitcher_Example/Pods-DisplaySwitcher_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		66D64E1B67F7002C4DF917746FC782E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6FBB4B07531F6AE88F6DA131B2637F8 /* DisplaySwitcher.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DisplaySwitcher/DisplaySwitcher-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DisplaySwitcher/DisplaySwitcher-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 2.0;
+				MODULEMAP_FILE = "Target Support Files/DisplaySwitcher/DisplaySwitcher.modulemap";
+				PRODUCT_MODULE_NAME = DisplaySwitcher;
+				PRODUCT_NAME = DisplaySwitcher;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -376,8 +530,66 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9C05E08351EB41A1D1B7C9213ADD860 /* Pods-DisplaySwitcher_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -398,147 +610,15 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		585398EFAAA43BADFCBBA6C037CD6305 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D9C05E08351EB41A1D1B7C9213ADD860 /* Pods-DisplaySwitcher_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-DisplaySwitcher_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DisplaySwitcher_Example/Pods-DisplaySwitcher_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		CA0585DFC19881A55CA9CDF38168987B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1426F7C677E831CBCB63307370CB4942 /* DisplaySwitcher.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DisplaySwitcher/DisplaySwitcher-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DisplaySwitcher/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DisplaySwitcher/DisplaySwitcher.modulemap";
-				PRODUCT_MODULE_NAME = DisplaySwitcher;
-				PRODUCT_NAME = DisplaySwitcher;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D7A9BCF1F541871C9264CE02517370FD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B9F05DDAF167F9E32C6642A3DA81B162 /* Pods-DisplaySwitcher_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-DisplaySwitcher_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DisplaySwitcher_Example/Pods-DisplaySwitcher_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		DDDF05FC209148778142CD493F50AB30 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1426F7C677E831CBCB63307370CB4942 /* DisplaySwitcher.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/DisplaySwitcher/DisplaySwitcher-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/DisplaySwitcher/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/DisplaySwitcher/DisplaySwitcher.modulemap";
-				PRODUCT_MODULE_NAME = DisplaySwitcher;
-				PRODUCT_NAME = DisplaySwitcher;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -603,34 +683,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		271AAB1A02E7752FA3B9B01B0FB9DE36 /* Build configuration list for PBXNativeTarget "DisplaySwitcher" */ = {
+		3F6345F235217227F5EFAD55D01BC356 /* Build configuration list for PBXNativeTarget "Pods-DisplaySwitcher_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DDDF05FC209148778142CD493F50AB30 /* Debug */,
-				CA0585DFC19881A55CA9CDF38168987B /* Release */,
+				41B9C6F09A980285032B76FB7F13CBCA /* Debug */,
+				33424DD2101A28249B91C4E3DB3A4E5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				199D972A13F2B4C56847F7A89CCA83BC /* Debug */,
-				FDB2FC4A1E5891381CD9D922145497F1 /* Release */,
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9B36A197AB0BE3478AA95E9D78270444 /* Build configuration list for PBXNativeTarget "Pods-DisplaySwitcher_Example" */ = {
+		F509C2163AAAF33545793A6E061592A6 /* Build configuration list for PBXNativeTarget "DisplaySwitcher" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D7A9BCF1F541871C9264CE02517370FD /* Debug */,
-				585398EFAAA43BADFCBBA6C037CD6305 /* Release */,
+				66D64E1B67F7002C4DF917746FC782E8 /* Debug */,
+				1D424BBEC5B99364259DD6075C837935 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }
