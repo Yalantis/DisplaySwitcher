@@ -24,7 +24,7 @@ Also, read how it was done in [our blog](https://yalantis.com/blog/contact-displ
 
 ```ruby
 use_frameworks!
-pod ‘DisplaySwitcher’, '~> 1.0’
+pod ‘DisplaySwitcher’, '~> 1.2’
 ```
 
 ### [Carthage](https://github.com/Carthage/Carthage)
@@ -105,7 +105,7 @@ P.S. We’re going to publish more awesomeness wrapped in code and a tutorial on
 
 The MIT License (MIT)
 
-Copyright © 2017 Yalantis
+Copyright © 2018 Yalantis
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
