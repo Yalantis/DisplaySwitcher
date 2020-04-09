@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
     s.name             = "DisplaySwitcher"
-    s.version          = "1.2.1"
+    s.version          = "2.0"
     s.summary          = "This component implements custom transition between two collection view layouts."
     s.screenshot       = 'https://d13yacurqjgara.cloudfront.net/users/116693/screenshots/2276068/open-uri20151005-3-walc59'
 

@@ -32,31 +32,31 @@
 
 /* Begin PBXFileReference section */
 		091BBDC5E162CE51CB3517C1919727CE /* DisplaySwitchLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DisplaySwitchLayout.swift; sourceTree = "<group>"; };
-		1E5AB67E0AA571BAD8B10B516165583D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		1E5AB67E0AA571BAD8B10B516165583D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		28CCAA167D85E0F51C7AB6960AC10401 /* Pods-DisplaySwitcher_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DisplaySwitcher_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2CEBCEFBBBAC7D834DE6B269B7362DD5 /* Pods-DisplaySwitcher_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DisplaySwitcher_Example.release.xcconfig"; sourceTree = "<group>"; };
 		30D7BEB0DF39B35B7F9552539B45C598 /* Pods-DisplaySwitcher_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DisplaySwitcher_Example-dummy.m"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		3EDD1895AC5F3964AB9697B7588FC1B1 /* DisplaySwitcher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DisplaySwitcher-umbrella.h"; sourceTree = "<group>"; };
-		528A8D6E33ECD4E7BDBA1C674DDBEB3E /* DisplaySwitcher.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DisplaySwitcher.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		528A8D6E33ECD4E7BDBA1C674DDBEB3E /* DisplaySwitcher.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = DisplaySwitcher.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		56A9BC1BEFD748B71F9E258C092AD937 /* DisplaySwitcher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DisplaySwitcher-prefix.pch"; sourceTree = "<group>"; };
 		5A1B8C1F380E4689D3A681C6DEE2D772 /* TransitionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
-		6385EF7FD9CD2E9BDC1E326BA6B810A4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		6385EF7FD9CD2E9BDC1E326BA6B810A4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		66707A1746D226EE243DE6DFB8AFF673 /* Pods-DisplaySwitcher_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DisplaySwitcher_Example.modulemap"; sourceTree = "<group>"; };
 		6752F6A957BFC04D799C557AA8BADD9E /* SwitchLayoutButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwitchLayoutButton.swift; sourceTree = "<group>"; };
 		6EDA5F8A20F6C598B89B007F83AFB3C1 /* TransitionLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TransitionLayout.swift; sourceTree = "<group>"; };
 		89D5C123918D0C384129AFE65A3345CB /* Pods-DisplaySwitcher_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DisplaySwitcher_Example-frameworks.sh"; sourceTree = "<group>"; };
 		8E6FCE8BF490A0A15A6A7D6240E4765A /* Pods-DisplaySwitcher_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DisplaySwitcher_Example-Info.plist"; sourceTree = "<group>"; };
 		97A3DC24B84B06D8304F5738394993FA /* DisplaySwitcher-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DisplaySwitcher-Info.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A73E6D531F7D94645127D914544A4CD7 /* Pods-DisplaySwitcher_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DisplaySwitcher_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		A7F6CA9CD983BA7BA6320AFBB9CBAE66 /* DisplaySwitcher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DisplaySwitcher-dummy.m"; sourceTree = "<group>"; };
 		B6FBB4B07531F6AE88F6DA131B2637F8 /* DisplaySwitcher.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DisplaySwitcher.xcconfig; sourceTree = "<group>"; };
 		C13E66B90690996BDE654DEA46FC0100 /* Pods-DisplaySwitcher_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DisplaySwitcher_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D4EB2A92D9D397C93579F5B10D1F1B84 /* DisplaySwitchLayoutAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DisplaySwitchLayoutAttributes.swift; sourceTree = "<group>"; };
-		D6CCF2EC774CAE11EF4803513C6312D1 /* DisplaySwitcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DisplaySwitcher.framework; path = DisplaySwitcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6CCF2EC774CAE11EF4803513C6312D1 /* DisplaySwitcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DisplaySwitcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC15F82B6DBD945A0840629A5F185F31 /* Pods-DisplaySwitcher_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DisplaySwitcher_Example-umbrella.h"; sourceTree = "<group>"; };
-		ED9DF2A4813DAA7DFFA0579F26F11D7E /* Pods_DisplaySwitcher_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DisplaySwitcher_Example.framework; path = "Pods-DisplaySwitcher_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED9DF2A4813DAA7DFFA0579F26F11D7E /* Pods_DisplaySwitcher_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DisplaySwitcher_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3775E3E1FB974610360B4880BB25338 /* DisplaySwitcher.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DisplaySwitcher.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -380,6 +380,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 2.0;
 				MODULEMAP_FILE = "Target Support Files/DisplaySwitcher/DisplaySwitcher.modulemap";
 				PRODUCT_MODULE_NAME = DisplaySwitcher;
 				PRODUCT_NAME = DisplaySwitcher;
@@ -479,6 +480,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 2.0;
 				MODULEMAP_FILE = "Target Support Files/DisplaySwitcher/DisplaySwitcher.modulemap";
 				PRODUCT_MODULE_NAME = DisplaySwitcher;
 				PRODUCT_NAME = DisplaySwitcher;
@@ -545,8 +547,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

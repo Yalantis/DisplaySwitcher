@@ -24,7 +24,7 @@ Also, read how it was done in [our blog](https://yalantis.com/blog/contact-displ
 
 ```ruby
 use_frameworks!
-pod ‘DisplaySwitcher’, '~> 1.0’
+pod ‘DisplaySwitcher’, '~> 2.0’
 ```
 
 ### [Carthage](https://github.com/Carthage/Carthage)
