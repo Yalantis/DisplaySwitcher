@@ -52,7 +52,7 @@ fileprivate extension TransitionManager {
         startTime = CACurrentMediaTime()
         updater = CADisplayLink(target: self, selector: #selector(updateTransitionProgress))
         updater.frameInterval = 1
-        updater.add(to: RunLoop.current, forMode: .common)
+        updater.add(to: .current, forMode: .common)
     }
     
     @objc func updateTransitionProgress() {
