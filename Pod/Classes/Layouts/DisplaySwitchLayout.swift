@@ -19,7 +19,8 @@ private let GridLayoutCountOfColumns = 3
 
 open class DisplaySwitchLayout: UICollectionViewLayout {
     
-    fileprivate let numberOfColumns: Int
+    fileprivate var numberOfColumns: Int
+    fileprivate var minGridWidth: CGFloat?
     fileprivate let cellPadding: CGFloat = 6.0
     fileprivate let staticCellHeight: CGFloat
     fileprivate let nextLayoutStaticCellHeight: CGFloat
@@ -36,13 +37,18 @@ open class DisplaySwitchLayout: UICollectionViewLayout {
     
     // MARK: - Lifecycle
   
-    public init(staticCellHeight: CGFloat, nextLayoutStaticCellHeight: CGFloat, layoutState: LayoutState) {
+    public init(staticCellHeight: CGFloat, nextLayoutStaticCellHeight: CGFloat, layoutState: LayoutState, minGridWidth: CGFloat? = nil) {
         self.staticCellHeight = staticCellHeight
         self.numberOfColumns = layoutState == .list ? ListLayoutCountOfColumns : GridLayoutCountOfColumns
         self.layoutState = layoutState
         self.nextLayoutStaticCellHeight = nextLayoutStaticCellHeight
         
         super.init()
+    }
+    
+    func calculateMinGridColumns() {
+        guard let minGridWidth = minGridWidth else { return }
+        self.numberOfColumns = layoutState == .grid ? Int(contentWidth / minGridWidth) : ListLayoutCountOfColumns
     }
 
     required public init?(coder aDecoder: NSCoder) {
