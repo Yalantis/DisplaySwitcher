@@ -42,13 +42,13 @@ open class DisplaySwitchLayout: UICollectionViewLayout {
         self.numberOfColumns = layoutState == .list ? ListLayoutCountOfColumns : GridLayoutCountOfColumns
         self.layoutState = layoutState
         self.nextLayoutStaticCellHeight = nextLayoutStaticCellHeight
-        
+        self.minGridWidth = minGridWidth
         super.init()
     }
     
     func calculateMinGridColumns() {
         guard let minGridWidth = minGridWidth else { return }
-        self.numberOfColumns = layoutState == .grid ? Int(contentWidth / minGridWidth) : ListLayoutCountOfColumns
+        numberOfColumns = layoutState == .grid ? Int(contentWidth / minGridWidth) : ListLayoutCountOfColumns
     }
 
     required public init?(coder aDecoder: NSCoder) {
