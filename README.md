@@ -33,10 +33,11 @@ github "Yalantis/DisplaySwitcher" "master"
 
 ## Use Cases
 You can use our Contact Display Switch for:
-Social networking apps
-Dating apps
-Email clients
-Any other app that features list of friends or contacts
+
+- Social networking apps
+- Dating apps
+- Email clients
+- Any other app that features list of friends or contacts
  
 Our DisplaySwitcher component isn't limited to friends and contacts lists. It can work with any other content too.
 
@@ -108,14 +109,16 @@ In the BaseLayout class, we use methods for building list and grid layouts. But 
  
 First, save the сontentOffset of the layout you are switching from:
 
+```swift
  override func prepareForTransitionFromLayout(oldLayout: UICollectionViewLayout) {
        previousContentOffset = NSValue(CGPoint:collectionView!.contentOffset)  
        return super.prepareForTransitionFromLayout(oldLayout)
 
    }
- 
+``` 
 Then, calculate the сontentOffset for the new layout in the targetContentOffsetForProposedContentOffset method:
 
+```swift
 override func targetContentOffsetForProposedContentOffset(proposedContentOffset: CGPoint) -> CGPoint {
        let previousContentOffsetPoint = previousContentOffset?.CGPointValue()
        let superContentOffset = super.targetContentOffsetForProposedContentOffset(proposedContentOffset)
@@ -134,22 +137,26 @@ return CGPoint(x: superContentOffset.x, y: offsetY)
        }
        return superContentOffset
    }
-
+``` 
  
 And then clear value of variable in method finalizeLayoutTransition:
 
+```swift
 override func finalizeLayoutTransition() {
        previousContentOffset = nil
        super.finalizeLayoutTransition()
    }
+``` 
  
 ### BaseLayoutAttributes
 
 In the BaseLayoutAttributes class, a few custom attributes are added:
 
+```swift
 var transitionProgress: CGFloat = 0.0
    var nextLayoutCellFrame = CGRectZero
    var layoutState: CollectionViewLayoutState = .ListLayoutState
+``` 
 
 transitionProgress is the current value of the animation transition that varies between 0 and 1. It’s needed for calculating constraints in the cell.
  
@@ -167,6 +174,7 @@ layoutAttributesForItemAtIndexPath, where we set properties values for the class
 ### TransitionManager
 The TransitionManager class uses the UICollectionView’sstartInteractiveTransitionToCollectionViewLayout method, where you point the layout it must switch to:
 
+```swift
 func startInteractiveTransition() {
        UIApplication.sharedApplication().beginIgnoringInteractionEvents()
        transitionLayout = collectionView.startInteractiveTransitionToCollectionViewLayout(destinationLayout, completion: { success, finish in
@@ -178,11 +186,13 @@ func startInteractiveTransition() {
        transitionLayout.layoutState = layoutState
        createUpdaterAndStart()
    }
+``` 
  
 ### CADisplayLink class
  
 This class is used to control animation duration. This class helps calculate the animation progress depending on the animation duration preset:
  
+```swift
 private func createUpdaterAndStart() {
        start = CACurrentMediaTime()
        updater = CADisplayLink(target: self, selector: Selector("updateTransitionProgress"))
@@ -202,6 +212,7 @@ dynamic func updateTransitionProgress() {
            updater.invalidate()
        }
    }
+```
 
 That’s it! Use our DisplaySwitcher in any way you like! Check it out on [Dribbble](https://dribbble.com/shots/2276068-Contact-Display-Switch).
 
